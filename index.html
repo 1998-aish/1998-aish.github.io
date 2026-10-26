@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aishwarya Srivastava | Data Scientist &amp; Analyst</title>
+<meta name="description" content="Data scientist and analyst with 4+ years at Accenture and DXC Technology, completing an M.S. in Data Science at Arizona State University. Open to full-time roles in the US.">
+<meta property="og:title" content="Aishwarya Srivastava | Data Scientist & Analyst">
+<meta property="og:description" content="4+ years in automation and analytics at Accenture and DXC. M.S. Data Science, Arizona State University. Open to full-time roles in the US.">
+<meta property="og:image" content="https://1998-aish.github.io/assets/img/churn-drivers.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314213D'/%3E%3Cpath d='M6 24 L12 18 L17 20 L26 9' stroke='%2333B5AC' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+:root {
+  --ink: #14213D;
+  --ink-soft: #46536E;
+  --paper: #F6F8FA;
+  --grid: #DFE6EE;
+  --teal: #1F8A85;
+  --teal-bright: #33B5AC;
+  --marigold: #E5A236;
+  --marigold-ink: #8A5A0B;
+  --white: #FFFFFF;
+  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --cond: "IBM Plex Sans Condensed", "Arial Narrow", "IBM Plex Sans", sans-serif;
+  --measure: 66ch;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--teal); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; border-radius: 4px; }
+
+.shell { width: min(1120px, 100% - 40px); margin-inline: auto; }
+
+/* ---------- top bar ---------- */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(246, 248, 250, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--grid);
+}
+.topbar .shell { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 60px; }
+.brand { font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
+.topbar nav { display: flex; gap: 22px; }
+.topbar nav a { color: var(--ink-soft); text-decoration: none; font-size: 15px; font-weight: 500; }
+.topbar nav a:hover { color: var(--ink); }
+@media (max-width: 640px) { .topbar nav a.optional { display: none; } .topbar nav { gap: 16px; } }
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+  border-bottom: 1px solid var(--grid);
+}
+.hero::after { /* fade the graph paper out toward the bottom */
+  content: ""; position: absolute; inset: auto 0 0; height: 120px;
+  background: linear-gradient(transparent, var(--paper)); pointer-events: none;
+}
+.hero .shell {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px; align-items: center;
+  padding-block: 72px 88px;
+}
+.hero h1 {
+  font-weight: 700; font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.02; letter-spacing: -.035em; margin: 0 0 20px;
+}
+.hero h1 .surname { display: block; color: var(--teal); }
+.lede { font-size: 20px; line-height: 1.5; color: var(--ink); margin: 0 0 16px; max-width: 34ch; }
+.status { display: flex; gap: 10px; align-items: baseline; color: var(--ink-soft); margin: 0 0 28px; max-width: 46ch; font-size: 16px; }
+.status::before { content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: #2FA35B; box-shadow: 0 0 0 4px rgba(47, 163, 91, .18); transform: translateY(-1px); }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font: 600 15px/1 var(--sans); text-decoration: none;
+  padding: 12px 16px; border-radius: 8px; border: 1.5px solid var(--ink);
+  color: var(--ink); background: var(--white);
+}
+.btn:hover { background: var(--ink); color: var(--white); }
+.btn.primary { background: var(--ink); color: var(--white); }
+.btn.primary:hover { background: var(--teal); border-color: var(--teal); }
+.btn svg { width: 17px; height: 17px; flex: none; }
+
+/* career chart */
+.career { margin: 0; }
+.career svg { width: 100%; height: auto; overflow: visible; }
+.career figcaption { font-size: 14px; color: var(--ink-soft); margin-top: 8px; padding-left: 8px; }
+.ax { font: 500 15px var(--cond); fill: var(--ink-soft); }
+.ann-title { font: 600 17px var(--cond); fill: var(--ink); }
+.ann-body { font: 500 15px var(--cond); fill: var(--ink-soft); }
+.ann-num { font: 600 30px var(--sans); letter-spacing: -.02em; }
+.career-line { stroke-dasharray: 760; stroke-dashoffset: 0; animation: draw 1.8s cubic-bezier(.4, 0, .2, 1) .2s both; }
+.career-area { animation: fade .8s ease 1.4s both; }
+.ann { animation: fade .5s ease both; }
+@keyframes draw { from { stroke-dashoffset: 760; } to { stroke-dashoffset: 0; } }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+.career-notes { display: none; }
+@media (max-width: 600px) {
+  .ax { font-size: 22px; }
+  .ann-title { font-size: 24px; }
+  .ann-body { display: none; }
+  .ann-num { font-size: 44px; }
+  .career figcaption { display: none; }
+  .career-notes { display: grid; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; font-size: 15px; color: var(--ink-soft); }
+  .career-notes b { font-size: 17px; margin-right: 6px; }
+}
+@media (max-width: 900px) {
+  .hero .shell { grid-template-columns: 1fr; gap: 36px; padding-block: 48px 64px; }
+  .lede { max-width: 40ch; }
+}
+
+/* ---------- sections ---------- */
+section { padding-block: 88px; }
+section + section { border-top: 1px solid var(--grid); }
+.section-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 40px; max-width: var(--measure); }
+.section-head h2 { font-size: clamp(30px, 3.6vw, 40px); line-height: 1.1; letter-spacing: -.025em; margin: 0; }
+.section-head p { margin: 0; color: var(--ink-soft); }
+
+/* ---------- projects ---------- */
+.project {
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 40px; align-items: start;
+  padding-block: 40px; border-top: 1px solid var(--grid);
+}
+.project:first-of-type { border-top: 0; padding-top: 0; }
+.project.flip { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.project.flip .shot { order: 2; }
+.shot {
+  margin: 0; background: var(--white); border: 1px solid var(--grid); border-radius: 10px; padding: 14px;
+}
+.shot img { width: 100%; height: auto; border-radius: 4px; }
+.shot.pair { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.project h3 { font-size: 26px; line-height: 1.2; letter-spacing: -.02em; margin: 0 0 10px; }
+.project .what { margin: 0 0 18px; color: var(--ink-soft); }
+.result {
+  margin: 0 0 18px; padding: 14px 16px; border-left: 4px solid var(--marigold);
+  background: #FDF4E4; color: var(--ink); border-radius: 0 8px 8px 0;
+}
+.result strong { color: var(--marigold-ink); }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0 0 18px; font-size: 15px; }
+.facts dt { color: var(--ink-soft); font-weight: 500; }
+.facts dd { margin: 0; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-weight: 600; font-size: 15px; }
+.featured h3 { font-size: 32px; }
+.featured { grid-template-columns: 1fr; gap: 28px; }
+.featured .body { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 40px; }
+@media (max-width: 860px) {
+  .project, .project.flip, .featured .body { grid-template-columns: 1fr; gap: 24px; }
+  .project.flip .shot { order: 0; }
+}
+
+/* ---------- experience ---------- */
+.roles { display: grid; gap: 0; }
+.role { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; padding-block: 28px; border-top: 1px solid var(--grid); }
+.role:first-child { border-top: 0; padding-top: 0; }
+.role .when { color: var(--ink-soft); font: 500 16px/1.5 var(--cond); }
+.role h3 { margin: 0; font-size: 21px; letter-spacing: -.01em; }
+.role .org { margin: 2px 0 12px; color: var(--teal); font-weight: 600; }
+.role ul { margin: 0; padding-left: 20px; max-width: var(--measure); }
+.role li + li { margin-top: 6px; }
+@media (max-width: 640px) { .role { grid-template-columns: 1fr; gap: 6px; } }
+
+/* ---------- skills ---------- */
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px 48px; }
+.skills h3 { font-size: 18px; margin: 0 0 6px; }
+.skills p { margin: 0 0 8px; color: var(--ink-soft); font-size: 15px; }
+.skills .tools { margin: 0; color: var(--ink); font-weight: 500; }
+
+/* ---------- contact ---------- */
+.contact { background: var(--ink); color: var(--white); border-top: 0; }
+.contact .section-head p { color: #C3CCDD; }
+.contact .section-head h2 { color: var(--white); }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 48px; align-items: start; }
+.email-big { font-size: clamp(17px, 4.4vw, 30px); font-weight: 600; color: var(--white); overflow-wrap: anywhere; text-decoration-color: var(--teal-bright); }
+.contact .btn { background: transparent; color: var(--white); border-color: #5C6A88; }
+.contact .btn:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
+.contact .actions { margin-top: 24px; }
+.ride {
+  border: 1px solid #34436A; border-radius: 12px; padding: 22px;
+  background: linear-gradient(135deg, rgba(51, 181, 172, .12), rgba(229, 162, 54, .1));
+}
+.ride h3 { margin: 0 0 6px; font-size: 19px; color: var(--white); }
+.ride p { margin: 0 0 16px; color: #C3CCDD; font-size: 15px; }
+.ride a { color: var(--teal-bright); font-weight: 600; }
+@media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
+
+footer { background: var(--ink); color: #8D99B4; font-size: 14px; padding: 0 0 40px; }
+footer .shell { border-top: 1px solid #2A3757; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer a { color: #C3CCDD; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .career-line, .career-area, .ann { animation: none; }
+}
+@media print {
+  .topbar, .ride { display: none; }
+  .hero { background: none; }
+  .contact, footer { background: none; color: var(--ink); }
+  .contact .section-head h2, .email-big, .contact .btn { color: var(--ink); }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="shell">
+    <a class="brand" href="#top">Aishwarya Srivastava</a>
+    <nav aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#experience" class="optional">Experience</a>
+      <a href="#skills" class="optional">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <div class="hero">
+    <div class="shell">
+      <div>
+        <h1>Aishwarya <span class="surname">Srivastava</span></h1>
+        <p class="lede">I turn business data into models and dashboards that teams act on.</p>
+        <p class="status">Data scientist with 4+ years at Accenture and DXC Technology, completing an M.S. in Data Science at Arizona State University. Open to full-time roles in the US.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn" href="mailto:aishwaryasrivastava789@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/aish-sv123" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
+          <a class="btn" href="https://github.com/1998-aish" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+        </div>
+      </div>
+
+      <figure class="career" aria-labelledby="career-cap">
+        <svg viewBox="0 0 640 420" role="img" aria-labelledby="career-title career-desc">
+          <title id="career-title">Career so far, drawn as a line chart</title>
+          <desc id="career-desc">2020 to 2023: Software Engineer at DXC Technology, where automation cut downtime by 25 percent. 2023 to 2024: Analyst at Accenture, where automation cut manual effort by 40 percent. 2025 onward: M.S. in Data Science and Analytics at Arizona State University, including a churn model that catches 79 percent of churners.</desc>
+          <defs>
+            <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#33B5AC" stop-opacity=".28"/>
+              <stop offset="1" stop-color="#33B5AC" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- era bands -->
+          <rect x="60" y="40" width="231" height="320" fill="#14213D" fill-opacity=".035"/>
+          <rect x="300" y="40" width="141" height="320" fill="#14213D" fill-opacity=".06"/>
+          <rect x="454" y="40" width="166" height="320" fill="#1F8A85" fill-opacity=".08"/>
+
+          <!-- x axis -->
+          <line x1="40" y1="360" x2="620" y2="360" stroke="#14213D" stroke-width="1.5"/>
+          <g class="ax" text-anchor="middle">
+            <text x="46" y="388">2020</text>
+            <text x="132" y="388">2021</text>
+            <text x="218" y="388">2022</text>
+            <text x="304" y="388">2023</text>
+            <text x="390" y="388">2024</text>
+            <text x="476" y="388">2025</text>
+            <text x="562" y="388">2026</text>
+          </g>
+          <g stroke="#14213D" stroke-width="1.5">
+            <line x1="46" y1="360" x2="46" y2="366"/><line x1="132" y1="360" x2="132" y2="366"/><line x1="218" y1="360" x2="218" y2="366"/>
+            <line x1="304" y1="360" x2="304" y2="366"/><line x1="390" y1="360" x2="390" y2="366"/><line x1="476" y1="360" x2="476" y2="366"/><line x1="562" y1="360" x2="562" y2="366"/>
+          </g>
+
+          <!-- era labels -->
+          <text class="ann-title" x="70" y="66">DXC Technology</text>
+          <text class="ann-body" x="70" y="86">Software engineer</text>
+          <text class="ann-title" x="310" y="66">Accenture</text>
+          <text class="ann-body" x="310" y="86">Analyst</text>
+          <text class="ann-title" x="464" y="66">Arizona State</text>
+          <text class="ann-body" x="464" y="86">M.S. Data Science</text>
+
+          <!-- the line -->
+          <path class="career-area" d="M60 320 C120 312 220 278 291 262 L300 258 C360 238 410 214 441 200 L454 194 C510 172 565 140 612 116 L612 360 L60 360 Z" fill="url(#area)"/>
+          <path class="career-line" d="M60 320 C120 312 220 278 291 262 L300 258 C360 238 410 214 441 200 L454 194 C510 172 565 140 612 116" fill="none" stroke="#1F8A85" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- callouts -->
+          <g class="ann" style="animation-delay:.7s">
+            <circle cx="220" cy="279" r="7" fill="#fff" stroke="#E5A236" stroke-width="4"/>
+            <line x1="220" y1="271" x2="220" y2="214" stroke="#E5A236" stroke-width="1.5" stroke-dasharray="3 4"/>
+            <text class="ann-num" x="132" y="160" fill="#8A5A0B">−25%</text>
+            <text class="ann-body" x="132" y="183">less downtime</text>
+            <text class="ann-body" x="132" y="202">via Kubernetes</text>
+          </g>
+          <g class="ann" style="animation-delay:1.1s">
+            <circle cx="410" cy="215" r="7" fill="#fff" stroke="#E5A236" stroke-width="4"/>
+            <line x1="410" y1="223" x2="410" y2="262" stroke="#E5A236" stroke-width="1.5" stroke-dasharray="3 4"/>
+            <text class="ann-num" x="318" y="294" fill="#8A5A0B">−40%</text>
+            <text class="ann-body" x="318" y="317">manual effort</text>
+            <text class="ann-body" x="318" y="336">via Python + UiPath</text>
+          </g>
+          <g class="ann" style="animation-delay:1.5s">
+            <circle cx="612" cy="116" r="9" fill="#1F8A85"/>
+            <circle cx="612" cy="116" r="16" fill="none" stroke="#1F8A85" stroke-opacity=".35" stroke-width="2"/>
+            <line x1="612" y1="134" x2="612" y2="222" stroke="#1F8A85" stroke-width="1.5" stroke-dasharray="3 4"/>
+            <text class="ann-num" x="600" y="256" text-anchor="end" fill="#1F8A85">79%</text>
+            <text class="ann-body" x="600" y="279" text-anchor="end">of churners caught</text>
+            <text class="ann-body" x="600" y="298" text-anchor="end">by my ML model</text>
+          </g>
+        </svg>
+        <figcaption id="career-cap">My career so far. Callouts are measured results from each stage.</figcaption>
+        <ul class="career-notes">
+          <li><b style="color:#8A5A0B">−25%</b>downtime at DXC through Kubernetes automation</li>
+          <li><b style="color:#8A5A0B">−40%</b>manual effort at Accenture through Python and UiPath automation</li>
+          <li><b style="color:#1F8A85">79%</b>of churners caught by my ML model at ASU</li>
+        </ul>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="shell">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Each one starts with a business question and ends with a number someone could act on. All code is on GitHub.</p>
+      </div>
+
+      <article class="project featured">
+        <figure class="shot"><a href="assets/img/churn-drivers.png"><picture><source media="(max-width: 700px)" srcset="assets/img/churn-lift.png" width="840" height="480"><img src="assets/img/churn-drivers.png" width="1800" height="480" alt="Bar charts of churn rate by contract type, tenure, internet service and payment method. Month-to-month contracts churn at 43 percent versus 3 percent for two-year contracts." loading="lazy"></picture></a></figure>
+        <div class="body">
+          <div>
+            <h3>Customer churn prediction</h3>
+            <p class="what">A telecom company loses about 1 in 4 customers. I built a model that ranks customers by churn risk so the retention team can reach them before they leave, then packaged it as a tested pipeline with an interactive app.</p>
+            <p class="result">Catches <strong>79% of churners</strong>, up from 56% for the baseline. Contacting the riskiest 20% of customers reaches half of everyone who would leave.</p>
+            <div class="links">
+              <a href="https://github.com/1998-aish/churn-prediction-ml" target="_blank" rel="noopener">Read the code</a>
+            </div>
+          </div>
+          <dl class="facts">
+            <dt>Data</dt><dd>7,043 telecom customers, 19 features</dd>
+            <dt>Method</dt><dd>Logistic regression tuned with cross-validation and a recall-first decision threshold, compared with Random Forest and XGBoost</dd>
+            <dt>Engineering</dt><dd>scikit-learn pipeline, saved model, Streamlit app, pytest suite, GitHub Actions CI</dd>
+            <dt>Finding</dt><dd>Month-to-month contracts, first-year customers and electronic-check payers churn the most</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="shot"><a href="assets/img/segments.png"><img src="assets/img/segments.png" width="960" height="720" alt="Scatter plot of mall customers by income and spending score, colored into six segments." loading="lazy"></a></figure>
+        <div>
+          <h3>Customer segmentation</h3>
+          <p class="what">A mall sent the same offers to everyone. I grouped 200 customers by age, income and spending, chose the number of segments with silhouette analysis, and gave each segment a marketing action.</p>
+          <p class="result"><strong>Six segments</strong>, including a 16% group of high earners who barely spend: the biggest growth opportunity.</p>
+          <dl class="facts"><dt>Stack</dt><dd>Python, scikit-learn (K-Means, PCA)</dd></dl>
+          <div class="links"><a href="https://github.com/1998-aish/customer-segmentation-ml" target="_blank" rel="noopener">Read the code</a></div>
+        </div>
+      </article>
+
+      <article class="project flip">
+        <figure class="shot"><a href="assets/img/pizza.png"><img src="assets/img/pizza.png" width="1800" height="504" alt="Three charts: pizza orders by hour peaking at lunch and dinner, orders by weekday peaking on Friday, and revenue split evenly across four categories." loading="lazy"></a></figure>
+        <div>
+          <h3>Pizza sales analysis</h3>
+          <p class="what">A year of restaurant transactions analyzed in PostgreSQL to find what drives revenue and when demand peaks.</p>
+          <p class="result"><strong>$818K revenue across 21,350 orders.</strong> Two daily rush windows, Friday as the busiest day, and three low-earning pizzas worth reviewing.</p>
+          <dl class="facts"><dt>Stack</dt><dd>SQL: joins, CTEs, window functions</dd></dl>
+          <div class="links"><a href="https://github.com/1998-aish/pizza_sales_SQL" target="_blank" rel="noopener">Read the queries</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="shot"><a href="assets/img/movies.png"><img src="assets/img/movies.png" width="960" height="600" alt="Bar chart of average audience rating by movie genre, with History, War, Music and Animation highest and Horror lowest." loading="lazy"></a></figure>
+        <div>
+          <h3>Movie catalog analysis</h3>
+          <p class="what">9,827 movies compared on how often each genre appears, how popular it is, and how audiences rate it.</p>
+          <p class="result"><strong>Animation is the sweet spot</strong>: the most popular major genre and one of the best rated. Action and sci-fi draw clicks but rate low.</p>
+          <dl class="facts"><dt>Stack</dt><dd>Python, pandas, Matplotlib</dd></dl>
+          <div class="links"><a href="https://github.com/1998-aish/Netflix-Analysis" target="_blank" rel="noopener">Read the code</a></div>
+        </div>
+      </article>
+
+      <article class="project flip">
+        <figure class="shot"><a href="assets/img/trends.png"><img src="assets/img/trends.png" width="1189" height="590" alt="Line chart of Google search interest over 12 months for machine learning, data science and cloud computing." loading="lazy"></a></figure>
+        <div>
+          <h3>Google search trends</h3>
+          <p class="what">Search demand for machine learning, data science and cloud computing, pulled from Google Trends with the PyTrends API.</p>
+          <p class="result"><strong>"Machine learning" is searched 3–4× more</strong> than "cloud computing", and all three peak in June and dip over the winter holidays.</p>
+          <dl class="facts"><dt>Stack</dt><dd>Python, PyTrends, Plotly</dd></dl>
+          <div class="links"><a href="https://github.com/1998-aish/Google-Data-Analysis-using-Python" target="_blank" rel="noopener">Read the code</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience">
+    <div class="shell">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Four years building automation and analytics for enterprise clients before graduate school.</p>
+      </div>
+      <div class="roles">
+        <div class="role">
+          <div class="when">Current</div>
+          <div>
+            <h3>M.S. Data Science &amp; Analytics</h3>
+            <p class="org">Arizona State University</p>
+            <ul><li>Computing &amp; Decision Analytics track: machine learning, statistics and decision analytics.</li></ul>
+          </div>
+        </div>
+        <div class="role">
+          <div class="when">Apr 2023 to Dec 2024</div>
+          <div>
+            <h3>Packaged App Development Analyst</h3>
+            <p class="org">Accenture</p>
+            <ul>
+              <li>Built and deployed automation with Python, Docker and UiPath, reducing manual effort by 40%.</li>
+              <li>Built Tableau dashboards and SAS predictive models for operational intelligence.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="role">
+          <div class="when">Jul 2020 to Mar 2023</div>
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="org">DXC Technology</p>
+            <ul>
+              <li>Led IT workflow automation with Docker and Kubernetes, cutting downtime by 25%.</li>
+              <li>Delivered Python, SQL and Tableau tools for forecasting and performance analysis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <div class="shell">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Grouped by the work I use them for.</p>
+      </div>
+      <div class="skills">
+        <div>
+          <h3>Modeling &amp; machine learning</h3>
+          <p>Classification, regression, clustering, time series, NLP, A/B testing</p>
+          <p class="tools">Python, R, scikit-learn, TensorFlow, XGBoost, MLflow</p>
+        </div>
+        <div>
+          <h3>Analytics &amp; reporting</h3>
+          <p>SQL analysis, KPI dashboards, business recommendations</p>
+          <p class="tools">SQL, PostgreSQL, MySQL, Tableau, Power BI, Excel, SAS</p>
+        </div>
+        <div>
+          <h3>Engineering &amp; automation</h3>
+          <p>Production pipelines, testing, CI, process automation</p>
+          <p class="tools">Docker, Kubernetes, Git, GitHub Actions, pytest, Streamlit, UiPath, REST APIs</p>
+        </div>
+        <div>
+          <h3>Cloud &amp; big data</h3>
+          <p>Data platforms and distributed processing</p>
+          <p class="tools">AWS, GCP, Snowflake, Apache Spark, Hadoop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <div class="shell">
+      <div class="section-head">
+        <h2>Let's talk</h2>
+        <p>I'm looking for full-time roles in data science, data analytics, software engineering and solutions engineering in the US.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <a class="email-big" href="mailto:aishwaryasrivastava789@gmail.com">aishwaryasrivastava789<wbr>@gmail.com</a>
+          <div class="actions">
+            <a class="btn" href="https://www.linkedin.com/in/aish-sv123" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/1998-aish" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <aside class="ride" aria-label="Interactive portfolio">
+          <h3>Want the fun version?</h3>
+          <p>Ride a motorbike through a 3D city where every landmark is a part of my portfolio. It takes about 40 seconds.</p>
+          <a href="https://claude.ai/artifact/CHWQqgzmSwLmjGSdywpf6B" target="_blank" rel="noopener">Take the portfolio ride</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="shell">
+    <span>© 2026 Aishwarya Srivastava</span>
+    <span>Charts on this page come from my project repositories on <a href="https://github.com/1998-aish">GitHub</a>.</span>
+  </div>
+</footer>
+
+</body>
+</html>
