@@ -1,513 +1,699 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aishwarya Srivastava | Data Scientist &amp; Analyst</title>
-<meta name="description" content="Data scientist and analyst with 4+ years at Accenture and DXC Technology, completing an M.S. in Data Science at Arizona State University. Open to full-time roles in the US.">
-<meta property="og:title" content="Aishwarya Srivastava | Data Scientist & Analyst">
-<meta property="og:description" content="4+ years in automation and analytics at Accenture and DXC. M.S. Data Science, Arizona State University. Open to full-time roles in the US.">
-<meta property="og:image" content="https://1998-aish.github.io/assets/img/churn-drivers.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314213D'/%3E%3Cpath d='M6 24 L12 18 L17 20 L26 9' stroke='%2333B5AC' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<title>Aishwarya Srivastava | Data Scientist, Analyst &amp; Sales Engineer</title>
+<meta name="description" content="Data scientist with 4+ years at Accenture and DXC Technology, Sales Engineer Intern at Rubrik, and M.S. Data Science candidate (4.00 GPA) at Arizona State University. Open to full-time roles in the US.">
+<meta property="og:title" content="Aishwarya Srivastava | Data Scientist, Analyst & Sales Engineer">
+<meta property="og:description" content="4+ years at Accenture and DXC. Sales Engineer Intern at Rubrik. M.S. Data Science, Arizona State University (4.00 GPA). Open to full-time roles in the US.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/68283762?v=4&s=400">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23121212'/%3E%3Cpath d='M12 10 6 16l6 6M20 10l6 6-6 6' stroke='%2300E699' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 <style>
-:root {
-  --ink: #14213D;
-  --ink-soft: #46536E;
-  --paper: #F6F8FA;
-  --grid: #DFE6EE;
-  --teal: #1F8A85;
-  --teal-bright: #33B5AC;
-  --marigold: #E5A236;
-  --marigold-ink: #8A5A0B;
-  --white: #FFFFFF;
-  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --cond: "IBM Plex Sans Condensed", "Arial Narrow", "IBM Plex Sans", sans-serif;
-  --measure: 66ch;
+:root, [data-theme="dark"] {
+  --bg: #121212;
+  --surface: #181818;
+  --surface-2: #1f1f1f;
+  --border: #2a2a2a;
+  --text: #FAFAFA;
+  --muted: #B3B3B3;
+  --accent: #00E699;
+  --accent-ink: #05291c;
+  --accent-soft: rgba(0, 230, 153, .12);
+  --accent-line: rgba(0, 230, 153, .35);
+  --chart-bg: #ffffff;
+  --shadow: 0 20px 60px rgba(0, 0, 0, .45);
+  color-scheme: dark;
+}
+[data-theme="light"] {
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-2: #F2F4F3;
+  --border: #E3E6E4;
+  --text: #121212;
+  --muted: #525A57;
+  --accent: #00A870;
+  --accent-ink: #FFFFFF;
+  --accent-soft: rgba(0, 168, 112, .1);
+  --accent-line: rgba(0, 168, 112, .35);
+  --chart-bg: #ffffff;
+  --shadow: 0 20px 50px rgba(18, 18, 18, .08);
+  color-scheme: light;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 72px; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font: 400 17px/1.6 var(--sans);
-  -webkit-font-smoothing: antialiased;
-}
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.6 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
-a { color: var(--teal); text-underline-offset: 3px; text-decoration-thickness: 1px; }
-a:hover { text-decoration-thickness: 2px; }
-:focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; border-radius: 4px; }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+.accent { color: var(--accent); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-.shell { width: min(1120px, 100% - 40px); margin-inline: auto; }
-
-/* ---------- top bar ---------- */
-.topbar {
-  position: sticky; top: 0; z-index: 10;
-  background: rgba(246, 248, 250, .92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--grid);
-}
-.topbar .shell { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 60px; }
-.brand { font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
-.topbar nav { display: flex; gap: 22px; }
-.topbar nav a { color: var(--ink-soft); text-decoration: none; font-size: 15px; font-weight: 500; }
-.topbar nav a:hover { color: var(--ink); }
-@media (max-width: 640px) { .topbar nav a.optional { display: none; } .topbar nav { gap: 16px; } }
+/* ---------- nav ---------- */
+.nav { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+.logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--text); text-decoration: none; font-size: 17px; }
+.logo svg { width: 22px; height: 22px; color: var(--accent); }
+.nav-links { display: flex; gap: 26px; }
+.nav-links a { color: var(--text); text-decoration: none; font-size: 15px; font-weight: 500; opacity: .85; }
+.nav-links a:hover { color: var(--accent); opacity: 1; }
+.nav-right { display: flex; align-items: center; gap: 10px; }
+.icon-btn { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 10px; border: 1px solid transparent; background: transparent; color: var(--text); cursor: pointer; }
+.icon-btn:hover { border-color: var(--border); background: var(--surface); }
+.icon-btn svg { width: 19px; height: 19px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font: 600 15px/1 "Inter", sans-serif; text-decoration: none; cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn svg { width: 16px; height: 16px; flex: none; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { color: var(--accent-ink); filter: brightness(1.08); }
+@media (max-width: 860px) { .nav-links { display: none; } }
+@media (max-width: 420px) { .nav .btn-primary .label-long { display: none; } }
 
 /* ---------- hero ---------- */
-.hero {
-  position: relative;
-  background-color: var(--paper);
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 32px 32px;
-  background-position: -1px -1px;
-  border-bottom: 1px solid var(--grid);
-}
-.hero::after { /* fade the graph paper out toward the bottom */
-  content: ""; position: absolute; inset: auto 0 0; height: 120px;
-  background: linear-gradient(transparent, var(--paper)); pointer-events: none;
-}
-.hero .shell {
-  position: relative; z-index: 1;
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 48px; align-items: center;
-  padding-block: 72px 88px;
-}
-.hero h1 {
-  font-weight: 700; font-size: clamp(40px, 6vw, 68px);
-  line-height: 1.02; letter-spacing: -.035em; margin: 0 0 20px;
-}
-.hero h1 .surname { display: block; color: var(--teal); }
-.lede { font-size: 20px; line-height: 1.5; color: var(--ink); margin: 0 0 16px; max-width: 34ch; }
-.status { display: flex; gap: 10px; align-items: baseline; color: var(--ink-soft); margin: 0 0 28px; max-width: 46ch; font-size: 16px; }
-.status::before { content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: #2FA35B; box-shadow: 0 0 0 4px rgba(47, 163, 91, .18); transform: translateY(-1px); }
-.actions { display: flex; flex-wrap: wrap; gap: 10px; }
-.btn {
-  display: inline-flex; align-items: center; gap: 8px;
-  font: 600 15px/1 var(--sans); text-decoration: none;
-  padding: 12px 16px; border-radius: 8px; border: 1.5px solid var(--ink);
-  color: var(--ink); background: var(--white);
-}
-.btn:hover { background: var(--ink); color: var(--white); }
-.btn.primary { background: var(--ink); color: var(--white); }
-.btn.primary:hover { background: var(--teal); border-color: var(--teal); }
-.btn svg { width: 17px; height: 17px; flex: none; }
+.hero { padding: 72px 0 56px; position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; width: 620px; height: 620px; right: -160px; top: -200px; background: radial-gradient(circle, var(--accent-soft), transparent 65%); pointer-events: none; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 48px; align-items: center; position: relative; }
+.hero h1 { font-size: clamp(38px, 5.4vw, 62px); line-height: 1.08; letter-spacing: -.03em; margin: 0 0 10px; font-weight: 800; }
+.role-line { font-size: clamp(26px, 3.6vw, 42px); font-weight: 700; letter-spacing: -.02em; margin: 0 0 18px; min-height: 1.25em; }
+.caret { display: inline-block; width: 3px; height: .9em; background: var(--accent); margin-left: 4px; vertical-align: -0.08em; animation: blink 1s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.quote { font-style: italic; color: var(--muted); font-size: 18px; margin: 0 0 26px; max-width: 46ch; }
+.paths-label { font-size: 14px; color: var(--muted); margin: 0 0 10px; }
+.paths { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+.path { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--accent-line); background: var(--accent-soft); color: var(--text); font: 600 14px/1 "Inter", sans-serif; cursor: pointer; text-decoration: none; }
+.path:hover { background: var(--accent); color: var(--accent-ink); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; max-width: 620px; }
+.stat { border: 1px solid var(--border); background: var(--surface); border-radius: 12px; padding: 12px 14px; }
+.stat b { display: block; font-size: 24px; letter-spacing: -.02em; color: var(--accent); }
+.stat span { font-size: 13px; color: var(--muted); line-height: 1.35; display: block; }
+@media (max-width: 560px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
-/* career chart */
-.career { margin: 0; }
-.career svg { width: 100%; height: auto; overflow: visible; }
-.career figcaption { font-size: 14px; color: var(--ink-soft); margin-top: 8px; padding-left: 8px; }
-.ax { font: 500 15px var(--cond); fill: var(--ink-soft); }
-.ann-title { font: 600 17px var(--cond); fill: var(--ink); }
-.ann-body { font: 500 15px var(--cond); fill: var(--ink-soft); }
-.ann-num { font: 600 30px var(--sans); letter-spacing: -.02em; }
-.career-line { stroke-dasharray: 760; stroke-dashoffset: 0; animation: draw 1.8s cubic-bezier(.4, 0, .2, 1) .2s both; }
-.career-area { animation: fade .8s ease 1.4s both; }
-.ann { animation: fade .5s ease both; }
-@keyframes draw { from { stroke-dashoffset: 760; } to { stroke-dashoffset: 0; } }
-@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-
-.career-notes { display: none; }
-@media (max-width: 600px) {
-  .ax { font-size: 22px; }
-  .ann-title { font-size: 24px; }
-  .ann-body { display: none; }
-  .ann-num { font-size: 44px; }
-  .career figcaption { display: none; }
-  .career-notes { display: grid; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; font-size: 15px; color: var(--ink-soft); }
-  .career-notes b { font-size: 17px; margin-right: 6px; }
-}
+.portrait { position: relative; width: min(380px, 80vw); aspect-ratio: 1; margin-inline: auto; }
+.portrait .ring { position: absolute; inset: 0; border-radius: 50%; padding: 6px; background: conic-gradient(from 200deg, var(--accent), transparent 40%, var(--accent) 70%, transparent); }
+.portrait img { position: absolute; inset: 10px; width: calc(100% - 20px); height: calc(100% - 20px); border-radius: 50%; object-fit: cover; background: var(--surface-2); border: 4px solid var(--bg); }
+.float { position: absolute; padding: 7px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--accent-line); color: var(--accent); font-size: 13px; font-weight: 700; box-shadow: var(--shadow); white-space: nowrap; animation: bob 5s ease-in-out infinite; }
+.float.f1 { top: 6%; right: -2%; }
+.float.f2 { top: 34%; left: -10%; animation-delay: -1.2s; }
+.float.f3 { bottom: 16%; right: -8%; animation-delay: -2.4s; }
+.float.f4 { bottom: 0; left: 8%; animation-delay: -3.6s; }
+@keyframes bob { 50% { transform: translateY(-8px); } }
 @media (max-width: 900px) {
-  .hero .shell { grid-template-columns: 1fr; gap: 36px; padding-block: 48px 64px; }
-  .lede { max-width: 40ch; }
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero .portrait-col { order: -1; }
+  .portrait { width: min(260px, 70vw); }
+  .float.f2 { left: -14%; }
 }
 
 /* ---------- sections ---------- */
-section { padding-block: 88px; }
-section + section { border-top: 1px solid var(--grid); }
-.section-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 40px; max-width: var(--measure); }
-.section-head h2 { font-size: clamp(30px, 3.6vw, 40px); line-height: 1.1; letter-spacing: -.025em; margin: 0; }
-.section-head p { margin: 0; color: var(--ink-soft); }
+section { padding: 88px 0; }
+.section-title { text-align: center; font-size: clamp(32px, 4.4vw, 46px); font-weight: 800; letter-spacing: -.03em; margin: 0 0 12px; }
+.section-sub { text-align: center; color: var(--muted); margin: 0 auto 44px; max-width: 64ch; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; }
 
-/* ---------- projects ---------- */
-.project {
-  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 40px; align-items: start;
-  padding-block: 40px; border-top: 1px solid var(--grid);
-}
-.project:first-of-type { border-top: 0; padding-top: 0; }
-.project.flip { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
-.project.flip .shot { order: 2; }
-.shot {
-  margin: 0; background: var(--white); border: 1px solid var(--grid); border-radius: 10px; padding: 14px;
-}
-.shot img { width: 100%; height: auto; border-radius: 4px; }
-.shot.pair { display: grid; grid-template-columns: 1fr; gap: 12px; }
-.project h3 { font-size: 26px; line-height: 1.2; letter-spacing: -.02em; margin: 0 0 10px; }
-.project .what { margin: 0 0 18px; color: var(--ink-soft); }
-.result {
-  margin: 0 0 18px; padding: 14px 16px; border-left: 4px solid var(--marigold);
-  background: #FDF4E4; color: var(--ink); border-radius: 0 8px 8px 0;
-}
-.result strong { color: var(--marigold-ink); }
-.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0 0 18px; font-size: 15px; }
-.facts dt { color: var(--ink-soft); font-weight: 500; }
-.facts dd { margin: 0; }
-.links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-weight: 600; font-size: 15px; }
-.featured h3 { font-size: 32px; }
-.featured { grid-template-columns: 1fr; gap: 28px; }
-.featured .body { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 40px; }
-@media (max-width: 860px) {
-  .project, .project.flip, .featured .body { grid-template-columns: 1fr; gap: 24px; }
-  .project.flip .shot { order: 0; }
-}
+/* about + tabs */
+.about-text { max-width: 74ch; margin: 0 auto 36px; text-align: center; color: var(--muted); font-size: 17px; }
+.about-text strong { color: var(--text); }
+.tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin: 0 auto 32px; padding: 6px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); width: fit-content; }
+.tab { padding: 9px 18px; border-radius: 8px; border: 0; background: transparent; color: var(--muted); font: 600 15px/1 "Inter", sans-serif; cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--accent-soft); color: var(--accent); }
+.tab:hover { color: var(--text); }
+.panel { max-width: 900px; margin-inline: auto; }
+.timeline { position: relative; display: grid; gap: 18px; padding-left: 28px; }
+.timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
+.tl-item { position: relative; padding: 20px 22px; }
+.tl-item::before { content: ""; position: absolute; left: -28px; top: 26px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
+.tl-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+.tl-item h3 { margin: 0; font-size: 19px; }
+.tl-org { color: var(--accent); font-weight: 600; margin: 2px 0 10px; }
+.tl-date { color: var(--muted); font-size: 14px; font-weight: 500; }
+.tl-item ul { margin: 0; padding-left: 18px; color: var(--muted); }
+.tl-item li + li { margin-top: 6px; }
+.tl-item li strong { color: var(--text); font-weight: 600; }
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chip { font-size: 12.5px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.mini { padding: 20px 22px; }
+.mini h3 { margin: 0 0 4px; font-size: 18px; }
+.mini p { margin: 0; color: var(--muted); }
+.mini .big { color: var(--accent); font-weight: 700; }
+.list-clean { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.list-clean li { display: flex; gap: 12px; align-items: flex-start; padding: 16px 18px; }
+.list-clean svg { width: 22px; height: 22px; color: var(--accent); flex: none; margin-top: 1px; }
+.list-clean b { display: block; }
+.list-clean span { color: var(--muted); font-size: 15px; }
 
-/* ---------- experience ---------- */
-.roles { display: grid; gap: 0; }
-.role { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; padding-block: 28px; border-top: 1px solid var(--grid); }
-.role:first-child { border-top: 0; padding-top: 0; }
-.role .when { color: var(--ink-soft); font: 500 16px/1.5 var(--cond); }
-.role h3 { margin: 0; font-size: 21px; letter-spacing: -.01em; }
-.role .org { margin: 2px 0 12px; color: var(--teal); font-weight: 600; }
-.role ul { margin: 0; padding-left: 20px; max-width: var(--measure); }
-.role li + li { margin-top: 6px; }
-@media (max-width: 640px) { .role { grid-template-columns: 1fr; gap: 6px; } }
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+.skill { padding: 24px; }
+.skill h3 { margin: 0 0 2px; font-size: 20px; }
+.skill p { margin: 0 0 14px; color: var(--muted); font-size: 14.5px; }
+.skill .chip { background: var(--accent-soft); }
+@media (max-width: 400px) { .skills { grid-template-columns: 1fr; } }
 
-/* ---------- skills ---------- */
-.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px 48px; }
-.skills h3 { font-size: 18px; margin: 0 0 6px; }
-.skills p { margin: 0 0 8px; color: var(--ink-soft); font-size: 15px; }
-.skills .tools { margin: 0; color: var(--ink); font-weight: 500; }
+/* projects */
+.filters { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 34px; }
+.filter { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 600 14px/1 "Inter", sans-serif; cursor: pointer; }
+.filter:hover { border-color: var(--accent); }
+.filter[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.project { display: flex; flex-direction: column; overflow: hidden; }
+.project[hidden] { display: none; }
+.project.flag { border-color: var(--accent-line); }
+.thumb { aspect-ratio: 16 / 10; background: var(--chart-bg); border-bottom: 1px solid var(--border); overflow: hidden; display: grid; place-items: center; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; }
+.thumb.cover img { object-fit: cover; object-position: top left; }
+.thumb.diagram { background: #0f1714; }
+.thumb.diagram svg { width: 100%; height: 100%; }
+.p-body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.p-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.p-role { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 6px; border: 1px solid var(--border); color: var(--muted); }
+.p-flag { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 6px; background: var(--accent); color: var(--accent-ink); }
+.project h3 { margin: 0; font-size: 20px; letter-spacing: -.01em; }
+.project .desc { margin: 0; color: var(--muted); font-size: 15px; }
+.result { margin: 0; padding: 10px 12px; border-radius: 10px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-size: 14.5px; }
+.result b { color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-size: 12.5px; font-weight: 600; padding: 4px 10px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); }
+.p-actions { display: flex; gap: 8px; margin-top: auto; padding-top: 6px; flex-wrap: wrap; }
+.p-actions .btn { padding: 9px 14px; font-size: 14px; }
+.p-note { font-size: 13.5px; color: var(--muted); margin-top: auto; padding-top: 6px; }
+.more { text-align: center; margin-top: 30px; color: var(--muted); }
 
-/* ---------- contact ---------- */
-.contact { background: var(--ink); color: var(--white); border-top: 0; }
-.contact .section-head p { color: #C3CCDD; }
-.contact .section-head h2 { color: var(--white); }
-.contact-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 48px; align-items: start; }
-.email-big { font-size: clamp(17px, 4.4vw, 30px); font-weight: 600; color: var(--white); overflow-wrap: anywhere; text-decoration-color: var(--teal-bright); }
-.contact .btn { background: transparent; color: var(--white); border-color: #5C6A88; }
-.contact .btn:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
-.contact .actions { margin-top: 24px; }
-.ride {
-  border: 1px solid #34436A; border-radius: 12px; padding: 22px;
-  background: linear-gradient(135deg, rgba(51, 181, 172, .12), rgba(229, 162, 54, .1));
-}
-.ride h3 { margin: 0 0 6px; font-size: 19px; color: var(--white); }
-.ride p { margin: 0 0 16px; color: #C3CCDD; font-size: 15px; }
-.ride a { color: var(--teal-bright); font-weight: 600; }
-@media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
+/* contact */
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 28px; align-items: start; }
+.c-list { display: grid; gap: 14px; margin-bottom: 20px; }
+.c-item { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--text); }
+.c-icon { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); flex: none; }
+.c-icon svg { width: 20px; height: 20px; }
+.c-item b { display: block; font-size: 16px; }
+.c-item span { color: var(--muted); font-size: 15px; overflow-wrap: anywhere; }
+a.c-item:hover span { color: var(--accent); }
+.box { padding: 22px 24px; }
+.box h3 { margin: 0 0 6px; font-size: 19px; }
+.box p { margin: 0; color: var(--muted); font-size: 15px; }
+.box + .box { margin-top: 14px; }
+.form { padding: 26px; }
+.form h3 { margin: 0 0 4px; font-size: 22px; }
+.form > p { margin: 0 0 18px; color: var(--muted); font-size: 15px; }
+.field { display: grid; gap: 6px; margin-bottom: 14px; }
+.field label { font-size: 14px; font-weight: 600; }
+.field input, .field textarea { width: 100%; font: 400 15px "Inter", sans-serif; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 11px 13px; }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.field textarea { min-height: 130px; resize: vertical; }
+.form .btn-primary { width: 100%; justify-content: center; padding: 13px; }
+.form-note { font-size: 13px; color: var(--muted); margin: 10px 0 0; text-align: center; }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
 
-footer { background: var(--ink); color: #8D99B4; font-size: 14px; padding: 0 0 40px; }
-footer .shell { border-top: 1px solid #2A3757; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-footer a { color: #C3CCDD; }
+footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer a { color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .career-line, .career-area, .ann { animation: none; }
-}
-@media print {
-  .topbar, .ride { display: none; }
-  .hero { background: none; }
-  .contact, footer { background: none; color: var(--ink); }
-  .contact .section-head h2, .email-big, .contact .btn { color: var(--ink); }
+  .float, .caret { animation: none; }
 }
 </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="shell">
-    <a class="brand" href="#top">Aishwarya Srivastava</a>
-    <nav aria-label="Sections">
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Aishwarya Srivastava, home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>Aishwarya
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#experience" class="optional">Experience</a>
-      <a href="#skills" class="optional">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch to light theme">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <a class="btn btn-primary" href="assets/Aishwarya_Srivastava_Resume.pdf" download>
+        <span>Résumé</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+      </a>
+    </div>
   </div>
 </header>
 
 <main id="top">
-
-  <!-- ================= HERO ================= -->
-  <div class="hero">
-    <div class="shell">
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
       <div>
-        <h1>Aishwarya <span class="surname">Srivastava</span></h1>
-        <p class="lede">I turn business data into models and dashboards that teams act on.</p>
-        <p class="status">Data scientist with 4+ years at Accenture and DXC Technology, completing an M.S. in Data Science at Arizona State University. Open to full-time roles in the US.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">See projects</a>
-          <a class="btn" href="mailto:aishwaryasrivastava789@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
-          <a class="btn" href="https://www.linkedin.com/in/aish-sv123" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
-          <a class="btn" href="https://github.com/1998-aish" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+        <h1 id="hero-title">Hi, I'm <span class="accent">Aishwarya Srivastava</span></h1>
+        <p class="role-line"><span id="role">Data Scientist</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="quote">"I build models, pipelines and dashboards, and explain them to the people who use them."</p>
+        <p class="paths-label">Hiring for one of these roles? Jump to the projects that fit:</p>
+        <div class="paths">
+          <a class="path" href="#projects" data-jump="ds">Data Science</a>
+          <a class="path" href="#projects" data-jump="an">Data Analytics</a>
+          <a class="path" href="#projects" data-jump="sw">Software &amp; AI</a>
+          <a class="path" href="#projects" data-jump="se">Sales Engineering</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>4+ yrs</b><span>industry experience at DXC &amp; Accenture</span></div>
+          <div class="stat"><b>$150K+</b><span>added revenue at Accenture</span></div>
+          <div class="stat"><b>15+</b><span>customer demos at Rubrik</span></div>
+          <div class="stat"><b>4.00</b><span>GPA, M.S. at ASU</span></div>
+        </div>
+      </div>
+      <div class="portrait-col">
+        <div class="portrait">
+          <div class="ring"></div>
+          <img src="https://avatars.githubusercontent.com/u/68283762?v=4&s=460" width="460" height="460" alt="Portrait of Aishwarya Srivastava">
+          <span class="float f1">Python</span>
+          <span class="float f2">SQL</span>
+          <span class="float f3">LLM Agents</span>
+          <span class="float f4">Tableau</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <h2 class="section-title" id="about-title">About <span class="accent">Me</span></h2>
+      <p class="about-text">I'm completing an <strong>M.S. in Data Science &amp; Analytics at Arizona State University</strong> (Dec 2026, 4.00 GPA) after <strong>four years</strong> building data pipelines, automation and dashboards at <strong>DXC Technology</strong> and <strong>Accenture</strong>. This summer I worked as a <strong>Sales Engineer Intern at Rubrik</strong>, running enterprise deployments and customer demos. I like problems where a model or a dashboard has to convince a real stakeholder.</p>
+
+      <div class="tabs" role="tablist" aria-label="About me">
+        <button class="tab" role="tab" id="tab-exp" aria-controls="panel-exp" aria-selected="true">Experience</button>
+        <button class="tab" role="tab" id="tab-edu" aria-controls="panel-edu" aria-selected="false" tabindex="-1">Education</button>
+        <button class="tab" role="tab" id="tab-cert" aria-controls="panel-cert" aria-selected="false" tabindex="-1">Certifications</button>
+        <button class="tab" role="tab" id="tab-lead" aria-controls="panel-lead" aria-selected="false" tabindex="-1">Leadership</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-exp" aria-labelledby="tab-exp">
+        <div class="timeline">
+          <article class="card tl-item">
+            <div class="tl-head"><h3>Sales Engineer Intern</h3><span class="tl-date">Jun 2026 – Aug 2026</span></div>
+            <p class="tl-org">Rubrik · Austin, TX</p>
+            <ul>
+              <li>Owned deployments for <strong>7+ enterprise customers</strong>, triaging failures through log analysis with product engineering; <strong>4+ customers</strong> advanced to the next deal stage.</li>
+              <li>Translated requirements from <strong>20+ customer calls across 8+ industries</strong> into designs and <strong>15+ demos</strong>.</li>
+            </ul>
+          </article>
+          <article class="card tl-item">
+            <div class="tl-head"><h3>Business Operations Analyst (Part-time)</h3><span class="tl-date">Mar 2026 – Present</span></div>
+            <p class="tl-org">Arizona State University · Tempe, AZ</p>
+            <ul>
+              <li>Created Excel dashboards tracking <strong>25+ purchase orders and invoices per month</strong> across <strong>7+ departments</strong>, and reconcile records weekly and monthly to resolve discrepancies.</li>
+            </ul>
+          </article>
+          <article class="card tl-item">
+            <div class="tl-head"><h3>Packaged App Development Analyst</h3><span class="tl-date">Apr 2023 – Dec 2024</span></div>
+            <p class="tl-org">Accenture · Bengaluru, India</p>
+            <ul>
+              <li>Developed payment processing automation on daily and monthly schedules, verified with automated test scripts.</li>
+              <li>Administered the automation control room (scheduling, credentials, workflows) using SAP automation, IQ Bot and SQL.</li>
+              <li>Partnered with QA and developers to enhance flagship products, generating <strong>$150K+ in additional revenue</strong>.</li>
+            </ul>
+          </article>
+          <article class="card tl-item">
+            <div class="tl-head"><h3>Professional 1 Software Engineer</h3><span class="tl-date">Jul 2020 – Mar 2023</span></div>
+            <p class="tl-org">DXC Technology · Bengaluru, India</p>
+            <ul>
+              <li>Engineered and operated Python/SQL data pipelines for <strong>2.5+ years</strong> on <strong>Docker</strong> and <strong>Kubernetes</strong>, cleaning and transforming multi-source data for analytics.</li>
+              <li>Debugged production incidents by analyzing logs, and implemented validation checks that stopped bad records early.</li>
+              <li>Built SQL dashboards tracking SLA and KPI metrics, giving operations teams visibility into pipeline and system health.</li>
+            </ul>
+            <div class="chip-row"><span class="chip">Quarterly Champ Award</span><span class="chip">Promoted within 1.8 years</span><span class="chip">Team Leader, Belron account</span></div>
+          </article>
         </div>
       </div>
 
-      <figure class="career" aria-labelledby="career-cap">
-        <svg viewBox="0 0 640 420" role="img" aria-labelledby="career-title career-desc">
-          <title id="career-title">Career so far, drawn as a line chart</title>
-          <desc id="career-desc">2020 to 2023: Software Engineer at DXC Technology, where automation cut downtime by 25 percent. 2023 to 2024: Analyst at Accenture, where automation cut manual effort by 40 percent. 2025 onward: M.S. in Data Science and Analytics at Arizona State University, including a churn model that catches 79 percent of churners.</desc>
-          <defs>
-            <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#33B5AC" stop-opacity=".28"/>
-              <stop offset="1" stop-color="#33B5AC" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-
-          <!-- era bands -->
-          <rect x="60" y="40" width="231" height="320" fill="#14213D" fill-opacity=".035"/>
-          <rect x="300" y="40" width="141" height="320" fill="#14213D" fill-opacity=".06"/>
-          <rect x="454" y="40" width="166" height="320" fill="#1F8A85" fill-opacity=".08"/>
-
-          <!-- x axis -->
-          <line x1="40" y1="360" x2="620" y2="360" stroke="#14213D" stroke-width="1.5"/>
-          <g class="ax" text-anchor="middle">
-            <text x="46" y="388">2020</text>
-            <text x="132" y="388">2021</text>
-            <text x="218" y="388">2022</text>
-            <text x="304" y="388">2023</text>
-            <text x="390" y="388">2024</text>
-            <text x="476" y="388">2025</text>
-            <text x="562" y="388">2026</text>
-          </g>
-          <g stroke="#14213D" stroke-width="1.5">
-            <line x1="46" y1="360" x2="46" y2="366"/><line x1="132" y1="360" x2="132" y2="366"/><line x1="218" y1="360" x2="218" y2="366"/>
-            <line x1="304" y1="360" x2="304" y2="366"/><line x1="390" y1="360" x2="390" y2="366"/><line x1="476" y1="360" x2="476" y2="366"/><line x1="562" y1="360" x2="562" y2="366"/>
-          </g>
-
-          <!-- era labels -->
-          <text class="ann-title" x="70" y="66">DXC Technology</text>
-          <text class="ann-body" x="70" y="86">Software engineer</text>
-          <text class="ann-title" x="310" y="66">Accenture</text>
-          <text class="ann-body" x="310" y="86">Analyst</text>
-          <text class="ann-title" x="464" y="66">Arizona State</text>
-          <text class="ann-body" x="464" y="86">M.S. Data Science</text>
-
-          <!-- the line -->
-          <path class="career-area" d="M60 320 C120 312 220 278 291 262 L300 258 C360 238 410 214 441 200 L454 194 C510 172 565 140 612 116 L612 360 L60 360 Z" fill="url(#area)"/>
-          <path class="career-line" d="M60 320 C120 312 220 278 291 262 L300 258 C360 238 410 214 441 200 L454 194 C510 172 565 140 612 116" fill="none" stroke="#1F8A85" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-
-          <!-- callouts -->
-          <g class="ann" style="animation-delay:.7s">
-            <circle cx="220" cy="279" r="7" fill="#fff" stroke="#E5A236" stroke-width="4"/>
-            <line x1="220" y1="271" x2="220" y2="214" stroke="#E5A236" stroke-width="1.5" stroke-dasharray="3 4"/>
-            <text class="ann-num" x="132" y="160" fill="#8A5A0B">−25%</text>
-            <text class="ann-body" x="132" y="183">less downtime</text>
-            <text class="ann-body" x="132" y="202">via Kubernetes</text>
-          </g>
-          <g class="ann" style="animation-delay:1.1s">
-            <circle cx="410" cy="215" r="7" fill="#fff" stroke="#E5A236" stroke-width="4"/>
-            <line x1="410" y1="223" x2="410" y2="262" stroke="#E5A236" stroke-width="1.5" stroke-dasharray="3 4"/>
-            <text class="ann-num" x="318" y="294" fill="#8A5A0B">−40%</text>
-            <text class="ann-body" x="318" y="317">manual effort</text>
-            <text class="ann-body" x="318" y="336">via Python + UiPath</text>
-          </g>
-          <g class="ann" style="animation-delay:1.5s">
-            <circle cx="612" cy="116" r="9" fill="#1F8A85"/>
-            <circle cx="612" cy="116" r="16" fill="none" stroke="#1F8A85" stroke-opacity=".35" stroke-width="2"/>
-            <line x1="612" y1="134" x2="612" y2="222" stroke="#1F8A85" stroke-width="1.5" stroke-dasharray="3 4"/>
-            <text class="ann-num" x="600" y="256" text-anchor="end" fill="#1F8A85">79%</text>
-            <text class="ann-body" x="600" y="279" text-anchor="end">of churners caught</text>
-            <text class="ann-body" x="600" y="298" text-anchor="end">by my ML model</text>
-          </g>
-        </svg>
-        <figcaption id="career-cap">My career so far. Callouts are measured results from each stage.</figcaption>
-        <ul class="career-notes">
-          <li><b style="color:#8A5A0B">−25%</b>downtime at DXC through Kubernetes automation</li>
-          <li><b style="color:#8A5A0B">−40%</b>manual effort at Accenture through Python and UiPath automation</li>
-          <li><b style="color:#1F8A85">79%</b>of churners caught by my ML model at ASU</li>
-        </ul>
-      </figure>
-    </div>
-  </div>
-
-  <!-- ================= PROJECTS ================= -->
-  <section id="projects">
-    <div class="shell">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p>Each one starts with a business question and ends with a number someone could act on. All code is on GitHub.</p>
+      <div class="panel" role="tabpanel" id="panel-edu" aria-labelledby="tab-edu" hidden>
+        <div class="timeline">
+          <article class="card tl-item">
+            <div class="tl-head"><h3>M.S. Data Science &amp; Analytics</h3><span class="tl-date">Jan 2025 – Dec 2026</span></div>
+            <p class="tl-org">Arizona State University · Tempe, AZ</p>
+            <ul>
+              <li>Computing &amp; Decision Analytics track · <strong>4.00 GPA</strong></li>
+              <li>Courses: Statistical Machine Learning, Data Processing at Scale, Statistics for Data Analysts, Optimization</li>
+            </ul>
+          </article>
+          <article class="card tl-item">
+            <div class="tl-head"><h3>B.Tech. Computer Science</h3><span class="tl-date">Aug 2016 – Jun 2020</span></div>
+            <p class="tl-org">Dr. B.C. Roy Engineering College · West Bengal, India</p>
+            <ul><li><strong>3.5 GPA</strong></li></ul>
+          </article>
+        </div>
       </div>
 
-      <article class="project featured">
-        <figure class="shot"><a href="assets/img/churn-drivers.png"><picture><source media="(max-width: 700px)" srcset="assets/img/churn-lift.png" width="840" height="480"><img src="assets/img/churn-drivers.png" width="1800" height="480" alt="Bar charts of churn rate by contract type, tenure, internet service and payment method. Month-to-month contracts churn at 43 percent versus 3 percent for two-year contracts." loading="lazy"></picture></a></figure>
-        <div class="body">
-          <div>
-            <h3>Customer churn prediction</h3>
-            <p class="what">A telecom company loses about 1 in 4 customers. I built a model that ranks customers by churn risk so the retention team can reach them before they leave, then packaged it as a tested pipeline with an interactive app.</p>
-            <p class="result">Catches <strong>79% of churners</strong>, up from 56% for the baseline. Contacting the riskiest 20% of customers reaches half of everyone who would leave.</p>
-            <div class="links">
-              <a href="https://github.com/1998-aish/churn-prediction-ml" target="_blank" rel="noopener">Read the code</a>
+      <div class="panel" role="tabpanel" id="panel-cert" aria-labelledby="tab-cert" hidden>
+        <div class="grid-2">
+          <div class="card mini"><h3>Azure Fundamentals (AZ-900)</h3><p>Microsoft Certified</p></div>
+          <div class="card mini"><h3>Certified ScrumMaster (CSM)</h3><p>Scrum Alliance</p></div>
+          <div class="card mini"><h3>Advanced RPA Professional</h3><p>Automation Anywhere Certified</p></div>
+          <div class="card mini"><h3>OCI Foundations</h3><p>Oracle</p></div>
+          <div class="card mini"><h3>Foundations of AI Engineering</h3><p>CodePath</p></div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-lead" aria-labelledby="tab-lead" hidden>
+        <ul class="list-clean">
+          <li class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M8.2 12.3 7 22l5-3 5 3-1.2-9.7"/></svg><div><b>Quarterly Champ Award</b><span>DXC Technology</span></div></li>
+          <li class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 6-6 4 4 8-8M15 7h6v6"/></svg><div><b>Promoted within 1.8 years</b><span>DXC Technology</span></div></li>
+          <li class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 3.1a4 4 0 0 1 0 7.8M22 21v-2a4 4 0 0 0-3-3.9"/></svg><div><b>Team Leader</b><span>Belron client account, DXC Technology</span></div></li>
+          <li class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7l9 5 9-5-9-5ZM3 17l9 5 9-5M3 12l9 5 9-5"/></svg><div><b>President, Indian Students Association</b><span>Arizona State University</span></div></li>
+          <li class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg><div><b>Member, AI Society and GDSC</b><span>Arizona State University</span></div></li>
+          <li class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg><div><b>Daily problem solving</b><span><a href="https://github.com/1998-aish/neetcode-submissions" target="_blank" rel="noopener">LeetCode / NeetCode solutions on GitHub</a></span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 class="section-title" id="skills-title">Skills &amp; <span class="accent">Technologies</span></h2>
+      <p class="section-sub">The toolkit I use to go from raw data to a model, a pipeline or a dashboard, and then explain it to the customer.</p>
+      <div class="skills">
+        <div class="card skill"><h3>Languages &amp; Libraries</h3><p>Writing analysis and production code</p>
+          <div class="chip-row"><span class="chip">Python</span><span class="chip">NumPy</span><span class="chip">pandas</span><span class="chip">scikit-learn</span><span class="chip">SQL</span><span class="chip">R</span><span class="chip">Object-Oriented Programming</span></div></div>
+        <div class="card skill"><h3>Machine Learning</h3><p>Building and evaluating models</p>
+          <div class="chip-row"><span class="chip">Regression</span><span class="chip">Classification</span><span class="chip">Clustering</span><span class="chip">XGBoost</span><span class="chip">Time Series (SARIMAX)</span><span class="chip">Model Evaluation</span></div></div>
+        <div class="card skill"><h3>AI &amp; Responsible AI</h3><p>LLM systems people can trust</p>
+          <div class="chip-row"><span class="chip">LLM Agents</span><span class="chip">RAG</span><span class="chip">LangGraph</span><span class="chip">OpenAI API</span><span class="chip">SHAP Explainability</span><span class="chip">Hallucination Checks</span></div></div>
+        <div class="card skill"><h3>Deployment &amp; MLOps</h3><p>Shipping and running it reliably</p>
+          <div class="chip-row"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Linux</span><span class="chip">Git</span><span class="chip">CI/CD</span><span class="chip">REST APIs</span><span class="chip">Azure</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">pytest</span></div></div>
+        <div class="card skill"><h3>Data &amp; Visualization</h3><p>Pipelines, cleaning and reporting</p>
+          <div class="chip-row"><span class="chip">ETL Pipelines</span><span class="chip">Data Cleaning</span><span class="chip">PostgreSQL</span><span class="chip">Airflow</span><span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">Excel</span></div></div>
+        <div class="card skill"><h3>Customer-Facing Engineering</h3><p>From discovery call to working deployment</p>
+          <div class="chip-row"><span class="chip">Technical Demos</span><span class="chip">Requirements Discovery</span><span class="chip">Enterprise Deployments</span><span class="chip">Log-Based Troubleshooting</span><span class="chip">Stakeholder Communication</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <h2 class="section-title accent" id="projects-title">Featured Projects</h2>
+      <p class="section-sub">Pick the role you're hiring for to see the most relevant work first.</p>
+      <div class="filters" role="group" aria-label="Filter projects by role">
+        <button class="filter" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" data-filter="ds" aria-pressed="false">Data Science</button>
+        <button class="filter" data-filter="an" aria-pressed="false">Data Analytics</button>
+        <button class="filter" data-filter="sw" aria-pressed="false">Software &amp; AI</button>
+        <button class="filter" data-filter="se" aria-pressed="false">Sales Engineering</button>
+      </div>
+      <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+      <div class="projects">
+        <!-- Valley Fever -->
+        <article class="card project flag" data-roles="ds">
+          <div class="thumb diagram">
+            <svg viewBox="0 0 480 300" role="img" aria-label="Pipeline diagram: four public data sources (ADHS case reports, EPA PM10 dust, AZMet weather, PRISM climate) feed 50+ engineered features, which feed XGBoost and SARIMAX forecasts with 15 percent MAPE.">
+              <g fill="#18241f" stroke="#00E699" stroke-opacity=".5">
+                <rect x="14" y="18" width="150" height="52" rx="10"/><rect x="14" y="88" width="150" height="52" rx="10"/><rect x="14" y="158" width="150" height="52" rx="10"/><rect x="14" y="228" width="150" height="52" rx="10"/>
+              </g>
+              <g style="font:600 16px Inter,system-ui,sans-serif" fill="#FAFAFA">
+                <text x="28" y="50">ADHS cases</text><text x="28" y="120">EPA PM10 dust</text><text x="28" y="190">AZMet weather</text><text x="28" y="260">PRISM climate</text>
+              </g>
+              <g stroke="#00E699" stroke-width="2" fill="none" opacity=".75"><path d="M164 44 C186 44 186 150 204 150M164 114 C186 114 186 150 204 150M164 184 C186 184 186 150 204 150M164 254 C186 254 186 150 204 150M304 150H328"/></g>
+              <rect x="204" y="106" width="100" height="88" rx="14" fill="#00E699"/>
+              <text x="254" y="150" text-anchor="middle" style="font:800 30px Inter,system-ui,sans-serif" fill="#05291c">50+</text>
+              <text x="254" y="174" text-anchor="middle" style="font:700 15px Inter,system-ui,sans-serif" fill="#05291c">features</text>
+              <rect x="328" y="62" width="138" height="176" rx="14" fill="#18241f" stroke="#00E699" stroke-opacity=".5"/>
+              <text x="346" y="98" style="font:700 17px Inter,system-ui,sans-serif" fill="#FAFAFA">XGBoost</text>
+              <text x="346" y="120" style="font:500 15px Inter,system-ui,sans-serif" fill="#9fb3ab">vs SARIMAX</text>
+              <text x="346" y="178" style="font:800 40px Inter,system-ui,sans-serif" fill="#00E699">15%</text>
+              <text x="346" y="206" style="font:600 15px Inter,system-ui,sans-serif" fill="#9fb3ab">MAPE</text>
+            </svg>
+          </div>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-flag">Flagship</span><span class="p-role">ASU Capstone 2026</span><span class="p-role">Data Science</span></div>
+            <h3>Valley Fever Outbreak Forecasting</h3>
+            <p class="desc">Valley Fever cases in Arizona have nearly doubled in 20 years. Our team forecasts county-level outbreak risk ahead of time by fusing public health, air quality and weather data.</p>
+            <p class="result"><b>15% MAPE</b>, <b>25% better</b> than a seasonal baseline. Integrated 4 data sources (80K+ records) into 50+ features, with SHAP to explain the drivers to public health stakeholders.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">XGBoost</span><span class="tag">SARIMAX</span><span class="tag">SHAP</span></div>
+            <div class="p-actions"><a class="btn" href="https://github.com/1998-aish/Valley-fever-forecasting" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <!-- SE Copilot -->
+        <article class="card project flag" data-roles="sw se">
+          <div class="thumb diagram">
+            <svg viewBox="0 0 480 300" role="img" aria-label="Architecture diagram: a question goes to a router, which sends it to one of three LLM agents. The agents use RAG and the Salesforce REST API as tools, and answers pass a hallucination check.">
+              <rect x="12" y="112" width="96" height="64" rx="12" fill="#18241f" stroke="#00E699" stroke-opacity=".5"/>
+              <text x="60" y="150" text-anchor="middle" style="font:600 16px Inter,system-ui,sans-serif" fill="#FAFAFA">Question</text>
+              <rect x="128" y="116" width="92" height="56" rx="28" fill="#00E699"/>
+              <text x="174" y="150" text-anchor="middle" style="font:800 17px Inter,system-ui,sans-serif" fill="#05291c">Router</text>
+              <g stroke="#00E699" stroke-width="2" fill="none" opacity=".75"><path d="M108 144H128M220 144 C238 144 238 54 256 54M220 144H256M220 144 C238 144 238 234 256 234M376 54 C392 54 392 144 404 144M376 144H404M376 234 C392 234 392 144 404 144"/></g>
+              <g fill="#18241f" stroke="#00E699" stroke-opacity=".5"><rect x="256" y="26" width="120" height="56" rx="12"/><rect x="256" y="116" width="120" height="56" rx="12"/><rect x="256" y="206" width="120" height="56" rx="12"/></g>
+              <g style="font:600 16px Inter,system-ui,sans-serif" fill="#FAFAFA" text-anchor="middle"><text x="316" y="60">LLM agent 1</text><text x="316" y="150">LLM agent 2</text><text x="316" y="240">LLM agent 3</text></g>
+              <rect x="404" y="104" width="66" height="80" rx="12" fill="#18241f" stroke="#00E699"/>
+              <text x="437" y="140" text-anchor="middle" style="font:700 15px Inter,system-ui,sans-serif" fill="#00E699">Fact</text>
+              <text x="437" y="160" text-anchor="middle" style="font:700 15px Inter,system-ui,sans-serif" fill="#00E699">check</text>
+              <text x="240" y="290" text-anchor="middle" style="font:600 15px Inter,system-ui,sans-serif" fill="#9fb3ab">Tools: RAG + Salesforce REST API</text>
+            </svg>
+          </div>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-flag">Flagship</span><span class="p-role">Software &amp; AI</span><span class="p-role">Sales Engineering</span></div>
+            <h3>SE Copilot: Multi-Agent LLM System</h3>
+            <p class="desc">A multi-agent assistant: a router sends each question to the right LLM agent, and the agents draw on RAG and the Salesforce REST API to answer.</p>
+            <p class="result">Shipped <b>3 LLM agents</b> with a router, RAG and hallucination checks, <b>adopted by 5+ engineers</b>.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">OpenAI API</span><span class="tag">RAG</span><span class="tag">REST API</span></div>
+            <p class="p-note">Code isn't public. Happy to walk through the design in an interview.</p>
+          </div>
+        </article>
+
+        <!-- Churn -->
+        <article class="card project" data-roles="ds sw se">
+          <a class="thumb" href="https://github.com/1998-aish/churn-prediction-ml" target="_blank" rel="noopener" aria-label="Customer churn prediction on GitHub"><img src="assets/img/churn-lift.png" width="840" height="480" alt="Bar chart: contacting the riskiest 20 percent of customers reaches 50 percent of all churners, versus 20 percent for random outreach." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Data Science</span></div>
+            <h3>Customer Churn Prediction</h3>
+            <p class="desc">Benchmarked Logistic Regression, Random Forest and XGBoost on 7,043 telecom customers, then tuned the winner to find churners before they leave. Ships with a Streamlit app, tests and CI.</p>
+            <p class="result"><b>80.6% accuracy</b> on 7,043 customers; the recall-tuned model catches <b>79% of churners</b>.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Streamlit</span><span class="tag">pytest</span></div>
+            <div class="p-actions"><a class="btn" href="https://github.com/1998-aish/churn-prediction-ml" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <!-- Customer experience dashboard -->
+        <article class="card project" data-roles="an se">
+          <a class="thumb cover" href="https://public.tableau.com/views/Book1_17722362227180/Dashboard2?:language=en-GB&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener" aria-label="Open the live Tableau dashboard"><img src="assets/img/cx-dashboard.png" width="1219" height="794" alt="Tableau dashboard with total sales of 2.3 million dollars, 12.47 percent profit margin, sales by region, profit by category and a US sales map." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Data Analytics</span></div>
+            <h3>Customer Experience &amp; Profitability Dashboard</h3>
+            <p class="desc">An executive Tableau dashboard on sales, profit margin, regional performance and how discounts affect profit.</p>
+            <p class="result"><b>$2.3M in sales</b> across 9,994 orders at a 12.5% margin. Furniture earns just $18K of the $286K profit: the first place to review discounting.</p>
+            <div class="tags"><span class="tag">Tableau</span><span class="tag">Calculated Fields</span><span class="tag">KPIs</span></div>
+            <div class="p-actions">
+              <a class="btn btn-primary" href="https://public.tableau.com/views/Book1_17722362227180/Dashboard2?:language=en-GB&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn" href="https://github.com/1998-aish/customer-experience-tableau-dashboard" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
-          <dl class="facts">
-            <dt>Data</dt><dd>7,043 telecom customers, 19 features</dd>
-            <dt>Method</dt><dd>Logistic regression tuned with cross-validation and a recall-first decision threshold, compared with Random Forest and XGBoost</dd>
-            <dt>Engineering</dt><dd>scikit-learn pipeline, saved model, Streamlit app, pytest suite, GitHub Actions CI</dd>
-            <dt>Finding</dt><dd>Month-to-month contracts, first-year customers and electronic-check payers churn the most</dd>
-          </dl>
-        </div>
-      </article>
+        </article>
 
-      <article class="project">
-        <figure class="shot"><a href="assets/img/segments.png"><img src="assets/img/segments.png" width="960" height="720" alt="Scatter plot of mall customers by income and spending score, colored into six segments." loading="lazy"></a></figure>
-        <div>
-          <h3>Customer segmentation</h3>
-          <p class="what">A mall sent the same offers to everyone. I grouped 200 customers by age, income and spending, chose the number of segments with silhouette analysis, and gave each segment a marketing action.</p>
-          <p class="result"><strong>Six segments</strong>, including a 16% group of high earners who barely spend: the biggest growth opportunity.</p>
-          <dl class="facts"><dt>Stack</dt><dd>Python, scikit-learn (K-Means, PCA)</dd></dl>
-          <div class="links"><a href="https://github.com/1998-aish/customer-segmentation-ml" target="_blank" rel="noopener">Read the code</a></div>
-        </div>
-      </article>
+        <!-- Airflow ETL -->
+        <article class="card project" data-roles="sw">
+          <a class="thumb cover" href="https://github.com/1998-aish/airflow-etl-data-pipeline" target="_blank" rel="noopener" aria-label="Airflow ETL pipeline on GitHub"><img src="assets/img/etl-dashboard.png" width="1472" height="895" alt="Metabase dashboard built on the pipeline's PostgreSQL output, showing posts per user and title length distribution." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Software &amp; Data Engineering</span></div>
+            <h3>Airflow ETL Data Pipeline</h3>
+            <p class="desc">An end-to-end pipeline: extract from an API, transform with Python, load into PostgreSQL on an Airflow schedule, and report in Metabase, all running in Docker.</p>
+            <p class="result">One <b>scheduled Airflow DAG</b> from API to dashboard, reproducible with <b>docker-compose</b>.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Apache Airflow</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Metabase</span></div>
+            <div class="p-actions"><a class="btn" href="https://github.com/1998-aish/airflow-etl-data-pipeline" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
 
-      <article class="project flip">
-        <figure class="shot"><a href="assets/img/pizza.png"><img src="assets/img/pizza.png" width="1800" height="504" alt="Three charts: pizza orders by hour peaking at lunch and dinner, orders by weekday peaking on Friday, and revenue split evenly across four categories." loading="lazy"></a></figure>
-        <div>
-          <h3>Pizza sales analysis</h3>
-          <p class="what">A year of restaurant transactions analyzed in PostgreSQL to find what drives revenue and when demand peaks.</p>
-          <p class="result"><strong>$818K revenue across 21,350 orders.</strong> Two daily rush windows, Friday as the busiest day, and three low-earning pizzas worth reviewing.</p>
-          <dl class="facts"><dt>Stack</dt><dd>SQL: joins, CTEs, window functions</dd></dl>
-          <div class="links"><a href="https://github.com/1998-aish/pizza_sales_SQL" target="_blank" rel="noopener">Read the queries</a></div>
-        </div>
-      </article>
+        <!-- AI music assistant -->
+        <article class="card project" data-roles="sw">
+          <a class="thumb diagram" href="https://github.com/1998-aish/applied-ai-study-assistant" target="_blank" rel="noopener" aria-label="AI music assistant on GitHub"><img src="assets/img/ai-assistant.png" width="1100" height="740" alt="System diagram: a plain-English request goes to Groq LLaMA 3.3, which parses intent for a recommender engine; a second LLM call explains the top 5 songs, with logging, human review and reliability tests." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Software &amp; AI</span></div>
+            <h3>AI Music Assistant (RAG)</h3>
+            <p class="desc">Type a request in plain English and get songs that fit. An LLM parses the intent, a recommender scores the catalog, and the LLM explains its picks using only songs it actually retrieved.</p>
+            <p class="result">Answers are <b>grounded in real catalog data</b> through RAG, with <b>logging and reliability tests</b> to catch bad outputs.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Groq (LLaMA 3.3)</span><span class="tag">RAG</span><span class="tag">pytest</span></div>
+            <div class="p-actions"><a class="btn" href="https://github.com/1998-aish/applied-ai-study-assistant" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+        <!-- Pizza -->
+        <article class="card project" data-roles="an">
+          <a class="thumb" href="https://github.com/1998-aish/pizza_sales_SQL" target="_blank" rel="noopener" aria-label="Pizza sales SQL analysis on GitHub"><img src="assets/img/pizza.png" width="1800" height="504" alt="Charts of pizza orders by hour and weekday, peaking at lunch, dinner and on Fridays." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Data Analytics</span></div>
+            <h3>Pizza Sales Analysis (SQL)</h3>
+            <p class="desc">A year of restaurant transactions analyzed in PostgreSQL to find what drives revenue and when demand peaks.</p>
+            <p class="result"><b>$818K revenue, 21,350 orders.</b> Two daily rush windows, Friday as the busiest day, and three low earners to cut.</p>
+            <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">CTEs</span><span class="tag">Window Functions</span></div>
+            <div class="p-actions"><a class="btn" href="https://github.com/1998-aish/pizza_sales_SQL" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
 
-      <article class="project">
-        <figure class="shot"><a href="assets/img/movies.png"><img src="assets/img/movies.png" width="960" height="600" alt="Bar chart of average audience rating by movie genre, with History, War, Music and Animation highest and Horror lowest." loading="lazy"></a></figure>
-        <div>
-          <h3>Movie catalog analysis</h3>
-          <p class="what">9,827 movies compared on how often each genre appears, how popular it is, and how audiences rate it.</p>
-          <p class="result"><strong>Animation is the sweet spot</strong>: the most popular major genre and one of the best rated. Action and sci-fi draw clicks but rate low.</p>
-          <dl class="facts"><dt>Stack</dt><dd>Python, pandas, Matplotlib</dd></dl>
-          <div class="links"><a href="https://github.com/1998-aish/Netflix-Analysis" target="_blank" rel="noopener">Read the code</a></div>
-        </div>
-      </article>
+        <!-- Segmentation -->
+        <article class="card project" data-roles="ds an">
+          <a class="thumb" href="https://github.com/1998-aish/customer-segmentation-ml" target="_blank" rel="noopener" aria-label="Customer segmentation on GitHub"><img src="assets/img/segments.png" width="960" height="720" alt="Scatter plot of customers by income and spending score in six colored segments." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Data Science</span><span class="p-role">Analytics</span></div>
+            <h3>Customer Segmentation</h3>
+            <p class="desc">Grouped mall customers by age, income and spending, chose the number of segments with silhouette analysis, and gave each one a marketing action.</p>
+            <p class="result"><b>6 segments</b>, including a 16% group of high earners who barely spend: the biggest growth opportunity.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">K-Means</span><span class="tag">PCA</span></div>
+            <div class="p-actions"><a class="btn" href="https://github.com/1998-aish/customer-segmentation-ml" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
 
-      <article class="project flip">
-        <figure class="shot"><a href="assets/img/trends.png"><img src="assets/img/trends.png" width="1189" height="590" alt="Line chart of Google search interest over 12 months for machine learning, data science and cloud computing." loading="lazy"></a></figure>
-        <div>
-          <h3>Google search trends</h3>
-          <p class="what">Search demand for machine learning, data science and cloud computing, pulled from Google Trends with the PyTrends API.</p>
-          <p class="result"><strong>"Machine learning" is searched 3–4× more</strong> than "cloud computing", and all three peak in June and dip over the winter holidays.</p>
-          <dl class="facts"><dt>Stack</dt><dd>Python, PyTrends, Plotly</dd></dl>
-          <div class="links"><a href="https://github.com/1998-aish/Google-Data-Analysis-using-Python" target="_blank" rel="noopener">Read the code</a></div>
-        </div>
-      </article>
+        <!-- Layoffs dashboard -->
+        <article class="card project" data-roles="an">
+          <a class="thumb cover" href="https://public.tableau.com/shared/KX2FCXC8R?:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener" aria-label="Open the live layoffs dashboard"><img src="assets/img/layoffs-dashboard.png" width="1199" height="799" alt="Tableau dashboard of global tech layoffs over time, by industry, by country, and funding versus layoffs." loading="lazy"></a>
+          <div class="p-body">
+            <div class="p-meta"><span class="p-role">Data Analytics</span></div>
+            <h3>Global Tech Layoffs Dashboard</h3>
+            <p class="desc">Tech layoffs from 2020 to 2025 by industry, country and funding stage, with a regression on funding versus layoffs.</p>
+            <p class="result">Funding raised showed only a <b>weak correlation</b> with layoffs: capital didn't protect companies in the downturn.</p>
+            <div class="tags"><span class="tag">Tableau</span><span class="tag">Regression</span><span class="tag">Mapping</span></div>
+            <div class="p-actions">
+              <a class="btn btn-primary" href="https://public.tableau.com/shared/KX2FCXC8R?:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn" href="https://github.com/1998-aish/global-tech-layoffs-analysis-tableau" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="more">More work, including a movie catalog analysis and a Google Trends study, is on <a href="https://github.com/1998-aish?tab=repositories" target="_blank" rel="noopener">my GitHub</a>.</p>
     </div>
   </section>
 
-  <!-- ================= EXPERIENCE ================= -->
-  <section id="experience">
-    <div class="shell">
-      <div class="section-head">
-        <h2>Experience</h2>
-        <p>Four years building automation and analytics for enterprise clients before graduate school.</p>
-      </div>
-      <div class="roles">
-        <div class="role">
-          <div class="when">Current</div>
-          <div>
-            <h3>M.S. Data Science &amp; Analytics</h3>
-            <p class="org">Arizona State University</p>
-            <ul><li>Computing &amp; Decision Analytics track: machine learning, statistics and decision analytics.</li></ul>
-          </div>
-        </div>
-        <div class="role">
-          <div class="when">Apr 2023 to Dec 2024</div>
-          <div>
-            <h3>Packaged App Development Analyst</h3>
-            <p class="org">Accenture</p>
-            <ul>
-              <li>Built and deployed automation with Python, Docker and UiPath, reducing manual effort by 40%.</li>
-              <li>Built Tableau dashboards and SAS predictive models for operational intelligence.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="role">
-          <div class="when">Jul 2020 to Mar 2023</div>
-          <div>
-            <h3>Software Engineer</h3>
-            <p class="org">DXC Technology</p>
-            <ul>
-              <li>Led IT workflow automation with Docker and Kubernetes, cutting downtime by 25%.</li>
-              <li>Delivered Python, SQL and Tableau tools for forecasting and performance analysis.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SKILLS ================= -->
-  <section id="skills">
-    <div class="shell">
-      <div class="section-head">
-        <h2>Skills</h2>
-        <p>Grouped by the work I use them for.</p>
-      </div>
-      <div class="skills">
-        <div>
-          <h3>Modeling &amp; machine learning</h3>
-          <p>Classification, regression, clustering, time series, NLP, A/B testing</p>
-          <p class="tools">Python, R, scikit-learn, TensorFlow, XGBoost, MLflow</p>
-        </div>
-        <div>
-          <h3>Analytics &amp; reporting</h3>
-          <p>SQL analysis, KPI dashboards, business recommendations</p>
-          <p class="tools">SQL, PostgreSQL, MySQL, Tableau, Power BI, Excel, SAS</p>
-        </div>
-        <div>
-          <h3>Engineering &amp; automation</h3>
-          <p>Production pipelines, testing, CI, process automation</p>
-          <p class="tools">Docker, Kubernetes, Git, GitHub Actions, pytest, Streamlit, UiPath, REST APIs</p>
-        </div>
-        <div>
-          <h3>Cloud &amp; big data</h3>
-          <p>Data platforms and distributed processing</p>
-          <p class="tools">AWS, GCP, Snowflake, Apache Spark, Hadoop</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact">
-    <div class="shell">
-      <div class="section-head">
-        <h2>Let's talk</h2>
-        <p>I'm looking for full-time roles in data science, data analytics, software engineering and solutions engineering in the US.</p>
-      </div>
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="section-title" id="contact-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub">Hiring for data science, analytics, software or sales engineering? I'd love to hear from you.</p>
       <div class="contact-grid">
         <div>
-          <a class="email-big" href="mailto:aishwaryasrivastava789@gmail.com">aishwaryasrivastava789<wbr>@gmail.com</a>
-          <div class="actions">
-            <a class="btn" href="https://www.linkedin.com/in/aish-sv123" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="https://github.com/1998-aish" target="_blank" rel="noopener">GitHub</a>
+          <div class="c-list">
+            <a class="c-item" href="mailto:aishwaryasrivastava789@gmail.com"><span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>Email</b><span>aishwaryasrivastava789@gmail.com</span></div></a>
+            <a class="c-item" href="https://www.linkedin.com/in/aish-sv123" target="_blank" rel="noopener"><span class="c-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg></span><div><b>LinkedIn</b><span>linkedin.com/in/aish-sv123</span></div></a>
+            <a class="c-item" href="https://github.com/1998-aish" target="_blank" rel="noopener"><span class="c-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></span><div><b>GitHub</b><span>github.com/1998-aish</span></div></a>
+            <div class="c-item"><span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Location</b><span>Tempe, Arizona</span></div></div>
+          </div>
+          <div class="card box">
+            <h3>Open to full-time roles</h3>
+            <p>Graduating in December 2026 and looking for data science, data analytics, software engineering and sales or solutions engineering roles in the US.</p>
+          </div>
+          <div class="card box">
+            <h3>Want the fun version?</h3>
+            <p>Ride a motorbike through a 3D city where every landmark is part of my portfolio. <a href="https://claude.ai/artifact/CHWQqgzmSwLmjGSdywpf6B" target="_blank" rel="noopener">Take the portfolio ride</a></p>
           </div>
         </div>
-        <aside class="ride" aria-label="Interactive portfolio">
-          <h3>Want the fun version?</h3>
-          <p>Ride a motorbike through a 3D city where every landmark is a part of my portfolio. It takes about 40 seconds.</p>
-          <a href="https://claude.ai/artifact/CHWQqgzmSwLmjGSdywpf6B" target="_blank" rel="noopener">Take the portfolio ride</a>
-        </aside>
+
+        <form class="card form" id="contact-form" novalidate>
+          <h3>Send a Message</h3>
+          <p>This opens your email app with the message ready to send.</p>
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+          <div class="field"><label for="f-company">Company and role</label><input id="f-company" name="company" autocomplete="organization" placeholder="e.g. Data Scientist at Acme"></div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required placeholder="Your message"></textarea></div>
+          <button class="btn btn-primary" type="submit">Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/></svg></button>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="shell">
+  <div class="wrap">
     <span>© 2026 Aishwarya Srivastava</span>
-    <span>Charts on this page come from my project repositories on <a href="https://github.com/1998-aish">GitHub</a>.</span>
+    <span><a href="assets/Aishwarya_Srivastava_Resume.pdf" download>Download résumé (PDF)</a></span>
   </div>
 </footer>
 
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* theme toggle */
+  const root = document.documentElement, themeBtn = document.getElementById('theme');
+  const syncTheme = () => {
+    const dark = root.dataset.theme !== 'light';
+    themeBtn.querySelector('.i-sun').style.display = dark ? '' : 'none';
+    themeBtn.querySelector('.i-moon').style.display = dark ? 'none' : '';
+    themeBtn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  };
+  themeBtn.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    syncTheme();
+  });
+  syncTheme();
+
+  /* rotating role */
+  const roles = ['Data Scientist', 'Data Analyst', 'Software Engineer', 'Sales Engineer'];
+  const roleEl = document.getElementById('role');
+  if (!reduce) {
+    let r = 0, i = roles[0].length, deleting = true;
+    const tick = () => {
+      const word = roles[r];
+      if (deleting) { i--; if (i === 0) { deleting = false; r = (r + 1) % roles.length; } }
+      else { i++; if (i === roles[r].length) { deleting = true; roleEl.textContent = roles[r]; return setTimeout(tick, 1900); } }
+      roleEl.textContent = roles[r].slice(0, i) || ' ';
+      setTimeout(tick, deleting ? 45 : 85);
+    };
+    setTimeout(tick, 1900);
+  } else {
+    roleEl.textContent = roles.join(' · ');
+  }
+
+  /* about tabs */
+  const tabs = [...document.querySelectorAll('.tab')];
+  const select = t => {
+    tabs.forEach(x => {
+      const on = x === t;
+      x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+    });
+  };
+  tabs.forEach((t, idx) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const next = tabs[(idx + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      select(next); next.focus();
+    });
+  });
+
+  /* project filter */
+  const filters = [...document.querySelectorAll('.filter')];
+  const cards = [...document.querySelectorAll('.project')];
+  const status = document.getElementById('filter-status');
+  const applyFilter = key => {
+    filters.forEach(f => f.setAttribute('aria-pressed', f.dataset.filter === key));
+    let n = 0;
+    cards.forEach(c => { const show = key === 'all' || c.dataset.roles.split(' ').includes(key); c.hidden = !show; if (show) n++; });
+    const label = filters.find(f => f.dataset.filter === key).textContent;
+    status.textContent = key === 'all' ? `Showing all ${n} projects` : `Showing ${n} ${label} projects`;
+  };
+  filters.forEach(f => f.addEventListener('click', () => applyFilter(f.dataset.filter)));
+  document.querySelectorAll('[data-jump]').forEach(a => a.addEventListener('click', () => applyFilter(a.dataset.jump)));
+
+  /* contact form → email app */
+  const form = document.getElementById('contact-form'), note = document.getElementById('form-note');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = form.name.value.trim(), company = form.company.value.trim(), msg = form.message.value.trim();
+    if (!name || !msg) { note.textContent = 'Add your name and a message, then send.'; (name ? form.message : form.name).focus(); return; }
+    const subject = `Portfolio inquiry from ${name}${company ? ` (${company})` : ''}`;
+    location.href = `mailto:aishwaryasrivastava789@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg + '\n\n— ' + name + (company ? ', ' + company : ''))}`;
+    note.textContent = 'Your email app should open with the message filled in.';
+  });
+})();
+</script>
 </body>
 </html>
