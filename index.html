@@ -111,6 +111,26 @@ a { color: var(--accent); }
   .float.f2 { left: -14%; }
 }
 
+/* ---------- 3D ride showcase ---------- */
+.nav-links a.nav-ride { color: var(--accent); opacity: 1; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+.nav-links a.nav-ride::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.ride { padding: 8px 0 72px; }
+.ride-card { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 36px; align-items: center; padding: 18px; border-radius: 20px; border: 1px solid var(--accent-line); background: linear-gradient(135deg, var(--accent-soft), transparent 55%), var(--surface); box-shadow: var(--shadow); }
+.ride-media { position: relative; display: block; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 9; background: #0d1024; }
+.ride-media video, .ride-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ride-media .play { position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: rgba(13, 16, 36, .82); color: #fff; font-weight: 700; font-size: 14px; backdrop-filter: blur(6px); border: 1px solid rgba(255, 255, 255, .18); }
+.ride-media .play svg { width: 14px; height: 14px; color: var(--accent); }
+.ride-media:hover .play { background: var(--accent); color: var(--accent-ink); }
+.ride-media:hover .play svg { color: var(--accent-ink); }
+.built { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent-line); padding: 5px 12px; border-radius: 999px; margin-bottom: 14px; }
+.ride-copy h2 { font-size: clamp(26px, 3vw, 34px); line-height: 1.15; letter-spacing: -.025em; margin: 0 0 12px; }
+.ride-copy p { color: var(--muted); margin: 0 0 16px; }
+.ride-feats { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 8px; font-size: 15px; }
+.ride-feats li { display: flex; gap: 10px; align-items: flex-start; }
+.ride-feats li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 8px; border-radius: 2px; background: var(--accent); transform: rotate(45deg); }
+.ride-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 900px) { .ride-card { grid-template-columns: 1fr; gap: 22px; } }
+
 /* ---------- sections ---------- */
 section { padding: 88px 0; }
 .section-title { text-align: center; font-size: clamp(32px, 4.4vw, 46px); font-weight: 800; letter-spacing: -.03em; margin: 0 0 12px; }
@@ -233,6 +253,7 @@ footer a { color: var(--muted); }
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a href="ride/" class="nav-ride">3D Ride</a>
     </nav>
     <div class="nav-right">
       <button class="icon-btn" id="theme" type="button" aria-label="Switch to light theme">
@@ -277,6 +298,34 @@ footer a { color: var(--muted); }
           <span class="float f2">SQL</span>
           <span class="float f3">LLM Agents</span>
           <span class="float f4">Tableau</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3D RIDE ============ -->
+  <section class="ride" aria-labelledby="ride-title">
+    <div class="wrap">
+      <div class="ride-card">
+        <a class="ride-media" href="ride/" aria-label="Play the 3D portfolio ride">
+          <video id="ride-video" autoplay muted loop playsinline preload="metadata" poster="assets/ride/poster.jpg" aria-hidden="true">
+            <source src="assets/ride/preview.mp4" type="video/mp4">
+          </video>
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg>Play the ride</span>
+        </a>
+        <div class="ride-copy">
+          <span class="built">Built by me · Three.js</span>
+          <h2 id="ride-title">My portfolio, as a game you can ride through</h2>
+          <p>I built a playable 3D version of this page: ride a motorbike through a neon city where every landmark is a stop in my career.</p>
+          <ul class="ride-feats">
+            <li>A university campus, skill billboards, project screens and trophies</li>
+            <li>Watch the 40-second ride, or take the handlebars with the keyboard or touch</li>
+            <li>An animated rider, a cinematic camera, traffic and rain, all in WebGL</li>
+          </ul>
+          <div class="ride-actions">
+            <a class="btn btn-primary" href="ride/">Play the 3D ride</a>
+            <a class="btn" href="https://github.com/1998-aish/1998-aish.github.io/blob/main/ride/index.html" target="_blank" rel="noopener">View the code</a>
+          </div>
         </div>
       </div>
     </div>
@@ -587,10 +636,6 @@ footer a { color: var(--muted); }
             <h3>Open to full-time roles</h3>
             <p>Graduating in December 2026 and looking for data science, data analytics, software engineering and sales or solutions engineering roles in the US.</p>
           </div>
-          <div class="card box">
-            <h3>Want the fun version?</h3>
-            <p>Ride a motorbike through a 3D city where every landmark is part of my portfolio. <a href="https://claude.ai/artifact/CHWQqgzmSwLmjGSdywpf6B" target="_blank" rel="noopener">Take the portfolio ride</a></p>
-          </div>
         </div>
 
         <form class="card form" id="contact-form" novalidate>
@@ -618,6 +663,10 @@ footer a { color: var(--muted); }
 <script>
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* 3D ride preview: respect reduced motion */
+  const rv = document.getElementById('ride-video');
+  if (rv && reduce) { rv.removeAttribute('autoplay'); rv.pause(); }
 
   /* theme toggle */
   const root = document.documentElement, themeBtn = document.getElementById('theme');
