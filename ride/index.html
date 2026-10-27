@@ -194,15 +194,17 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 /* ---------- PORTFOLIO DATA: edit this block ---------- */
 const DATA = {
   name: "Aishwarya Srivastava",
-  tagline: "Data scientist with 4+ years at DXC Technology and Accenture, a Sales Engineer internship at Rubrik, and an M.S. in Data Science & Analytics at Arizona State University (4.00 GPA). Open to full-time roles across the US.",
+  tagline: "Data scientist with 4+ years at DXC Technology and Accenture, business operations analysis at Rubrik, and an M.S. in Data Science & Analytics at Arizona State University (4.00 GPA). Open to full-time roles across the US.",
   roles: [["Data Science","ds"],["Data Analytics","an"],["Software Engineering","sw"],["Sales Engineering","se"]],
   education: [
     { degree: "M.S. Data Science & Analytics", school: "Arizona State University", years: "2025 – 2026", note: "Computing & Decision Analytics track · 4.00 GPA" },
     { degree: "B.Tech. Computer Science", school: "Dr. B.C. Roy Engineering College", years: "2016 – 2020", note: "West Bengal, India · 3.5 GPA" }
   ],
   skills: [
-    { group: "Data Analytics & BI", tag: "ds", items: ["Python","SQL","R","pandas","Regression","Hypothesis Testing","A/B Testing","KPI Reporting"] },
-    { group: "Automation & AI", tag: "sw", items: ["ETL Pipelines","REST APIs","Docker","Kubernetes","LangGraph","RAG","OpenAI API","Salesforce API"] },
+    { group: "Data Science & ML", tag: "ds", items: ["Python","scikit-learn","XGBoost","SARIMAX","Regression","Classification","Clustering","SHAP"] },
+    { group: "Analytics & BI", tag: "an", items: ["SQL","R","PostgreSQL","Tableau","Power BI","A/B Testing","KPI Reporting","Airflow"] },
+    { group: "AI & Engineering", tag: "sw", items: ["LLM Agents","RAG","LangGraph","OpenAI API","Docker","Kubernetes","REST APIs","ETL"] },
+    { group: "Sales Eng & Cloud", tag: "se", items: ["Technical Demos","Requirements Discovery","PoC Coordination","Salesforce API","AWS","Azure","GCP"] },
     { group: "Business Operations", tag: "an", items: ["Process Improvement","Workflow Optimization","Requirements","Stakeholders","Root Cause Analysis","Sales Ops"] },
     { group: "Service Delivery", tag: "se", items: ["SLA Compliance","Incident Management","PoC Coordination","Deployment Tracking","Data Quality","Log Analysis"] }
   ],
@@ -229,9 +231,9 @@ const DATA = {
       result: "One scheduled DAG from API to dashboard.", tools: "Python · Airflow · PostgreSQL · Docker" }
   ],
   achievements: [
-    { title: "40% faster workflows", detail: "Accenture, Packaged App Development Analyst (Apr 2023 – Dec 2024): Python and REST API automation saved 20+ hours of manual work a week and cut SLA violations by 18%." },
-    { title: "35% more stable pipelines", detail: "DXC Technology, Software Engineer (Jul 2020 – Mar 2023): Python/SQL ETL pipelines; 24% fewer pipeline failures; Quarterly Champ Award; promoted within 1.8 years." },
-    { title: "20+ customer calls", detail: "Rubrik, Sales Engineer Intern (Jun – Aug 2026): turned requirements from 8+ industries into insights and coordinated proof-of-concept deployments." }
+    { title: "40% faster workflows", detail: "Accenture, Business Operations Analyst (Apr 2023 – Dec 2024): Python and REST API automation saved 20+ hours of manual work a week and cut SLA violations by 18%." },
+    { title: "35% more stable pipelines", detail: "DXC Technology, Business Operations Analyst (Jul 2020 – Mar 2023): Python/SQL ETL pipelines; 24% fewer pipeline failures; Quarterly Champ Award; promoted within 1.8 years." },
+    { title: "20+ customer calls", detail: "Rubrik, Business Operations Analyst (Jun – Aug 2026): turned requirements from 8+ industries into insights and coordinated proof-of-concept deployments." }
   ],
   contact: { email: "aishwaryasrivastava789@gmail.com", linkedin: "linkedin.com/in/aish-sv123", github: "github.com/1998-aish" }
 };
@@ -278,7 +280,7 @@ document.getElementById("guide").innerHTML = `
 document.getElementById("glance").innerHTML = [
   ["Seeking", DATA.roles.map(r => r[0]).join(" · ")],
   ["Education", DATA.education[0].degree + ", " + DATA.education[0].school],
-  ["Top skills", ["Python","SQL","R","ETL Pipelines","REST APIs","Docker","LangGraph"].join(", ")],
+  ["Top skills", ["Python","SQL","Scikit-learn","Tableau","Power BI","Docker","LangGraph"].join(", ")],
   ["Experience", "4+ yrs · Accenture, DXC Technology"],
   ["Impact", DATA.achievements[0].title + " · " + DATA.achievements[1].title, "big"],
   ["Contact", DATA.contact.email]
