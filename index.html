@@ -170,7 +170,8 @@ section { padding: 88px 0; }
 .list-clean span { color: var(--muted); font-size: 15px; }
 
 /* skills */
-.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+@media (max-width: 760px) { .skills { grid-template-columns: 1fr; } }
 .skill { padding: 24px; }
 .skill h3 { margin: 0 0 2px; font-size: 20px; }
 .skill p { margin: 0 0 14px; color: var(--muted); font-size: 14.5px; }
@@ -350,8 +351,10 @@ footer a { color: var(--muted); }
             <div class="tl-head"><h3>Sales Engineer Intern</h3><span class="tl-date">Jun 2026 – Aug 2026</span></div>
             <p class="tl-org">Rubrik · Austin, TX</p>
             <ul>
-              <li>Owned deployments for <strong>7+ enterprise customers</strong>, triaging failures through log analysis with product engineering; <strong>4+ customers</strong> advanced to the next deal stage.</li>
-              <li>Translated requirements from <strong>20+ customer calls across 8+ industries</strong> into designs and <strong>15+ demos</strong>.</li>
+              <li>Analyzed customer requirements from <strong>20+ calls across 8+ industries</strong>, turning recurring operational challenges into structured insights for sales planning and solution evaluation.</li>
+              <li>Coordinated proof-of-concept activities across customer environments, tracking deployment progress, technical blockers and stakeholder feedback.</li>
+              <li>Built reporting summaries from customer discussions, validation results and issue logs, highlighting trends, process gaps and follow-ups for sales engineering and business operations.</li>
+              <li>Partnered with engineering and sales operations to document workflow requirements, clarify ownership of open issues and standardize handoffs.</li>
             </ul>
           </article>
           <article class="card tl-item">
@@ -365,18 +368,20 @@ footer a { color: var(--muted); }
             <div class="tl-head"><h3>Packaged App Development Analyst</h3><span class="tl-date">Apr 2023 – Dec 2024</span></div>
             <p class="tl-org">Accenture · Bengaluru, India</p>
             <ul>
-              <li>Developed payment processing automation on daily and monthly schedules, verified with automated test scripts.</li>
-              <li>Administered the automation control room (scheduling, credentials, workflows) using SAP automation, IQ Bot and SQL.</li>
-              <li>Partnered with QA and developers to enhance flagship products, generating <strong>$150K+ in additional revenue</strong>.</li>
+              <li>Found automation opportunities in process execution data with Python, improving workflow processing speed by <strong>40%</strong>.</li>
+              <li>Automated repetitive data processing and admin work with Python and REST API integrations, eliminating <strong>20+ hours of manual work per week</strong>.</li>
+              <li>Analyzed application monitoring, incident trends and SLA compliance, coordinating fixes that cut service-level violations by <strong>18%</strong>.</li>
+              <li>Documented automation workflows, exception handling and monitoring requirements to standardize operations and strengthen process governance.</li>
             </ul>
           </article>
           <article class="card tl-item">
             <div class="tl-head"><h3>Professional 1 Software Engineer</h3><span class="tl-date">Jul 2020 – Mar 2023</span></div>
             <p class="tl-org">DXC Technology · Bengaluru, India</p>
             <ul>
-              <li>Engineered and operated Python/SQL data pipelines for <strong>2.5+ years</strong> on <strong>Docker</strong> and <strong>Kubernetes</strong>, cleaning and transforming multi-source data for analytics.</li>
-              <li>Debugged production incidents by analyzing logs, and implemented validation checks that stopped bad records early.</li>
-              <li>Built SQL dashboards tracking SLA and KPI metrics, giving operations teams visibility into pipeline and system health.</li>
+              <li>Consolidated operational data from multiple business systems with Python, SQL and ETL pipelines for consistent, accurate reporting.</li>
+              <li>Validated transformations and resolved recurring processing issues, improving pipeline stability by <strong>35%</strong>.</li>
+              <li>Traced recurring failures through SQL analysis and application logs, implementing fixes that reduced pipeline failures by <strong>24%</strong>.</li>
+              <li>Integrated data across platforms with REST APIs and optimized SQL, and built SQL summaries and exception reports for management reviews.</li>
             </ul>
             <div class="chip-row"><span class="chip">Quarterly Champ Award</span><span class="chip">Promoted within 1.8 years</span><span class="chip">Team Leader, Belron account</span></div>
           </article>
@@ -430,18 +435,14 @@ footer a { color: var(--muted); }
       <h2 class="section-title" id="skills-title">Skills &amp; <span class="accent">Technologies</span></h2>
       <p class="section-sub">The toolkit I use to go from raw data to a model, a pipeline or a dashboard, and then explain it to the customer.</p>
       <div class="skills">
-        <div class="card skill"><h3>Languages &amp; Libraries</h3><p>Writing analysis and production code</p>
-          <div class="chip-row"><span class="chip">Python</span><span class="chip">NumPy</span><span class="chip">pandas</span><span class="chip">scikit-learn</span><span class="chip">SQL</span><span class="chip">R</span><span class="chip">Object-Oriented Programming</span></div></div>
-        <div class="card skill"><h3>Machine Learning</h3><p>Building and evaluating models</p>
-          <div class="chip-row"><span class="chip">Regression</span><span class="chip">Classification</span><span class="chip">Clustering</span><span class="chip">XGBoost</span><span class="chip">Time Series (SARIMAX)</span><span class="chip">Model Evaluation</span></div></div>
-        <div class="card skill"><h3>AI &amp; Responsible AI</h3><p>LLM systems people can trust</p>
-          <div class="chip-row"><span class="chip">LLM Agents</span><span class="chip">RAG</span><span class="chip">LangGraph</span><span class="chip">OpenAI API</span><span class="chip">SHAP Explainability</span><span class="chip">Hallucination Checks</span></div></div>
-        <div class="card skill"><h3>Deployment &amp; MLOps</h3><p>Shipping and running it reliably</p>
-          <div class="chip-row"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Linux</span><span class="chip">Git</span><span class="chip">CI/CD</span><span class="chip">REST APIs</span><span class="chip">Azure</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">pytest</span></div></div>
-        <div class="card skill"><h3>Data &amp; Visualization</h3><p>Pipelines, cleaning and reporting</p>
-          <div class="chip-row"><span class="chip">ETL Pipelines</span><span class="chip">Data Cleaning</span><span class="chip">PostgreSQL</span><span class="chip">Airflow</span><span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">Excel</span></div></div>
-        <div class="card skill"><h3>Customer-Facing Engineering</h3><p>From discovery call to working deployment</p>
-          <div class="chip-row"><span class="chip">Technical Demos</span><span class="chip">Requirements Discovery</span><span class="chip">Enterprise Deployments</span><span class="chip">Log-Based Troubleshooting</span><span class="chip">Stakeholder Communication</span></div></div>
+        <div class="card skill"><h3>Data Analytics &amp; BI</h3><p>From raw data to a decision</p>
+          <div class="chip-row"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span><span class="chip">pandas</span><span class="chip">EDA</span><span class="chip">Statistical Modeling</span><span class="chip">Regression</span><span class="chip">Logistic Regression</span><span class="chip">Hypothesis Testing</span><span class="chip">A/B Testing</span><span class="chip">KPI Reporting</span><span class="chip">Data Visualization</span><span class="chip">Trend Analysis</span><span class="chip">Performance Dashboards</span><span class="chip">Operational Forecasting</span></div></div>
+        <div class="card skill"><h3>Automation, Systems &amp; AI</h3><p>Pipelines, integrations and LLM workflows</p>
+          <div class="chip-row"><span class="chip">ETL Pipelines</span><span class="chip">REST APIs</span><span class="chip">Python Scripting</span><span class="chip">SQL Query Optimization</span><span class="chip">Data Integration</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Salesforce API</span><span class="chip">OpenAI API</span><span class="chip">LangGraph</span><span class="chip">RAG</span><span class="chip">Multi-Agent Systems</span></div></div>
+        <div class="card skill"><h3>Business Operations &amp; Process</h3><p>Making workflows faster and more reliable</p>
+          <div class="chip-row"><span class="chip">Operations Analysis</span><span class="chip">Process Improvement</span><span class="chip">Workflow Optimization</span><span class="chip">Requirements Gathering</span><span class="chip">Stakeholder Management</span><span class="chip">Cross-Functional Coordination</span><span class="chip">Sales Operations</span><span class="chip">Root Cause Analysis</span><span class="chip">Process Documentation</span><span class="chip">Continuous Improvement</span></div></div>
+        <div class="card skill"><h3>Service Delivery &amp; Enterprise Ops</h3><p>Keeping production systems healthy</p>
+          <div class="chip-row"><span class="chip">SLA Compliance</span><span class="chip">Incident Management</span><span class="chip">Service Performance Monitoring</span><span class="chip">PoC Coordination</span><span class="chip">Deployment Tracking</span><span class="chip">Data Quality Validation</span><span class="chip">Pipeline Reliability</span><span class="chip">Production Troubleshooting</span><span class="chip">Log Analysis</span></div></div>
       </div>
     </div>
   </section>
